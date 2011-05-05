@@ -1,0 +1,231 @@
+@import base
+@import color_definitions
+
+// Configure grid coordinates
+$grid-columns: 24
+$grid-width: 30px
+$grid-gutter-width: 10px
+
+@import grid-coordinates
+
++grid-coordinates
+
+body
+  @extend .font-helvetica
+  background: #fff
+  font-size: 12px
+  
+// Here down is project level
+
+#glow
+  position: absolute
+  background: #999
+  background: rgba(#999,.1)
+  width: 100%
+  height: 50px
+  top: 40px
+  z-index: 6
+  
+#mast-header
+  position: relative
+  background: #fff
+  background: rgba(#fff,.8)
+  padding: 5px 0
+  width: 100%
+  z-index: 4
+
+
+  // Site logo
+  .logo
+    position: relative
+    background: image-url("logo.png") no-repeat
+    height: 80px
+    margin-left: 50px
+    width: 140px
+    a
+      position: absolute
+      height: 100%
+      text-indent: -99999px
+      width: 100%
+
+  // Main navigation
+.navigation
+  position: absolute
+  right: 50px
+  bottom: 0
+  font-size: 14px
+  z-index: 10
+  ul
+    position: relative
+    +pie-clearfix
+    .sub-navigation
+      +pie-clearfix
+      display: none
+      position: absolute
+      right: 0
+      bottom: -30px
+      width: 900px
+      li, a
+        +float-right
+      li
+        margin-left: 0
+        a
+          background: #fff
+          background: rgba(#fff,.7)
+          display: block
+          font-size: 12px
+          line-height: 30px
+          padding: 0 12px
+          &:hover
+            background: #d3313a
+    li
+      +float-left
+      position: relative
+      display: block
+      margin-left: 5px
+      a
+        color: #d3313a
+        display: block
+        padding: 8px 20px
+        text-decoration: none
+        &:hover
+          @extend .navigation-hover
+
+.navigation-hover
+  background: $nav_hover_bg_color
+  background: rgba($nav_hover_bg_color,$nav_hover_bg_opacity)
+  color: #fff
+  
+// Navigation
+body.home a.home, body.about a.about, body.contact a.contact, body.blog a.blog, body.services li.services > a
+  @extend .navigation-hover
+  font-weight: bold
+
+// Subnavigation highlighting on section subpages
+body.tax li.tax > a
+  @extend .navigation-hover
+  font-weight: bold
+
+body.well li.well > a
+  @extend .navigation-hover
+  font-weight: bold
+
+
+body.health li.health > a
+  @extend .navigation-hover
+  font-weight: bold
+
+
+body.services
+  .services .sub-navigation
+    display: block !important
+    
+
+
+  
+.content-container
+  position: absolute
+  top: 50%
+  left: 50%
+  background: rgba($content_container_bg_color,$content_container_bg_opacity)
+  height: 450px
+  margin-top: -190px
+  margin-left: -480px
+  color: #fff
+  z-index: 1
+  border: solid #fff 1px
+
+  
+  
+
+body.home
+  // Content area
+  #content
+    .container
+      @extend .content-container
+      #featured
+        width: 960px
+        height: 450px
+        background: transparent
+        overflow: hidden
+        img, div
+          display: none
+
+body.page
+  // Content area
+  #content
+    .container
+      @extend .grid-container
+      @extend .content-container 
+      +border-radius(3px)
+      +box-sizing(border-box)
+      .left-container, .right-container
+        +box-sizing(border-box)
+        padding: 35px 15px 15px 15px
+        font-size: 18px
+        line-height: 30px
+        h1
+          font-size: 58px
+          line-height: 60px
+          margin-bottom: 20px
+          
+          
+      .left-container
+        +float-left
+//        width: 525px
+      .right-container
+        +float-right
+        padding-left: 0
+        width: 435px
+      h1
+        font-size: 18px
+        line-height: 1.2
+        margin-bottom: 18px
+      h2
+        font-size: 14px
+        font-weight: bold
+        line-height: 1.2
+        margin-bottom: 5px
+      p
+        line-height: 1.5
+        margin-bottom: 18px
+        padding-right: 15px
+      ul
+        list-style: disc
+        margin-bottom: 15px
+        padding-left: 15px
+        li
+          line-height: 1.5
+
+// Scrollbar Pane
+
+.scrollbar-pane
+  height: 420px
+  overflow: hidden
+  position: relative
+
+.scrollbar-handle-container
+  width: $scrollbar-width
+
+.scrollbar-handle
+  +border-radius($scrollbar-width / 2)
+  width: $scrollbar-width
+  background: $scrollbar-handle-color
+  &:hover
+    background: darken($scrollbar-handle-color,5)
+  &.move
+    background: darken($scrollbar-handle-color,12)
+
+.scrollbar-handle-up
+  width: $scrollbar-width
+  height: 20px
+  background: $scrollbar-handle-up-color
+  &:hover
+    background: $scrollbar-handle-up-hover-color
+
+.scrollbar-handle-down
+  width: $scrollbar-width
+  height: 20px
+  background: $scrollbar-handle-down-color
+  &:hover
+    background: $scrollbar-handle-down-hover-color

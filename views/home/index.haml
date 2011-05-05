@@ -1,0 +1,26 @@
+- @title = "Homepage"
+- @body_class = "home"
+
+#featured
+  %img{:src => "/images/features/h1.png"}
+  %img{:src => "/images/features/h2.png", :style=>'display: none;'}
+  %img{:src => "/images/features/h3.png", :style=>'display: none;'}
+  %img{:src => "/images/features/h4.png", :style=>'display: none;'}
+  %img{:src => "/images/features/h5.png", :style=>'display: none;'}
+  
+.captions
+  :plain
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+
+      $.ezBgResize({
+        img     : "/images/backgrounds/home.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 1,
+        center  : true
+      });
+
+    });

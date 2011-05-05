@@ -1,0 +1,7 @@
+The layout for the splash page is located in /views/splash/_layout.haml.
+<br/><br/>
+= yield 
+<br/><br/>
+If the layout for the splash page is the same as the rest of the site, you can remove /views/splash/_layout.haml, or you can change it's contents to read:
+<br/><br/>
+="= render :template => '/layouts/application.haml'"

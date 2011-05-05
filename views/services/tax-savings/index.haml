@@ -1,0 +1,31 @@
+- @title = "Tax Savings"
+- @body_class = "page services tax"
+
+.left-container
+  .scrollbar-pane
+    %h1= @title
+    
+    :markdown
+      We utilize section 125 and section 105 plans to create the maximum tax savings for both the employer and employee.  This tax savings can be used to fund  the programs being offered to employees.
+
+      We typically can reduce the tax burden to be able to save the employer approx $360 per employee per year.  for a company with 10 employees a $3600 per year savings helps offset the cost of benefits.
+
+      For the employees the savings is dictated by their individual tax bracket. Many of our clients are able to create a robust benefit package for the same out of pocket expense as before the tax savings program.
+      
+
+/ .right-container
+/   %img{:src => "/images/caulking.jpg"}
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+      
+      $.ezBgResize({
+        img     : "/images/backgrounds/Tax.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 1,
+        center  : true
+      });
+      
+    });

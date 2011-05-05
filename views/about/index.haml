@@ -1,0 +1,26 @@
+- @title = "About Us"
+- @body_class = "page about"
+
+.left-container
+  .scrollbar-pane
+    %h1= @title
+
+    :markdown
+      Our agency was founded for the purpose of finding solutions for today’s health insurance problems. We are not satisfied with just providing insurance to our clients. You need to be educated not only about health insurance but how to prevent illness and live a health lifestyle. Unfortunately most small business owners do not have the time to educate themselves or their employees of the changing trends in health care. We not only will find you the most competitive rates we will also help create tax deductions to afford the coverage and educate you so you can keep your premiums low.
+
+/ .right-container
+/   %img{:src => "/images/about.jpg"}
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+      
+      $.ezBgResize({
+        img     : "/images/backgrounds/about.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 1,
+        center  : true
+      });
+      
+    });

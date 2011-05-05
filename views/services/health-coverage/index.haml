@@ -1,0 +1,34 @@
+- @title = "Health Coverage"
+- @body_class = "page services health"
+
+.left-container
+  .scrollbar-pane
+    %h1= @title
+    :markdown
+      * Health insurance:
+      We offer coverage from all major Health Carriers
+      * Life insurance:
+      We use life insurance as an opportunity to protect against a catastrophic situation as well as an opportunity to plan for your future.
+      * Disability:
+      We provide both short term and long term disability for our clients as well as special programs designed to help with maternity, high deductibles, and additional out of pocket expenses due to illnesses or accidents.
+      * Dental:
+      Our dental providers have worked hard to provide the largest networks of dentist available for your individual needs.
+      * Vision:
+      We also have multiple vision providers so you can pick the perfect fit.
+
+/ .right-container
+/   %img{:src => "/images/parking-lot.jpg"}
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+      
+      $.ezBgResize({
+        img     : "/images/backgrounds/Health-Coverage.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 1,
+        center  : true
+      });
+      
+    });
