@@ -14,77 +14,75 @@ body
   @extend .font-helvetica
   background: #fff
   font-size: 12px
+  border-top: #fff 90px solid
+  
+h1
+  :color ($accent-color)
   
 // Here down is project level
 
-#glow
+#brand
   position: absolute
-  background: #999
-  background: rgba(#999,.1)
+  background: transparent image-url("brand.png") no-repeat
   width: 100%
-  height: 50px
-  top: 40px
+  height: 114px
+  top: -86px
   z-index: 6
+  margin: 0 auto
+  left: 50%
+  margin-left: -447px
+  clear: both
+  display: block
   
 #mast-header
-  position: relative
-  background: #fff
-  background: rgba(#fff,.8)
-  padding: 5px 0
+  position: absolute
+  background: #453419
   width: 100%
-  z-index: 4
+  height: 28px
+  top: 66px
+  z-index: 5
 
 
-  // Site logo
-  .logo
-    position: relative
-    background: image-url("logo.png") no-repeat
-    height: 80px
-    margin-left: 50px
-    width: 140px
-    a
-      position: absolute
-      height: 100%
-      text-indent: -99999px
-      width: 100%
+
+// Site logo
+.logo
+  position: relative
+  background: image-url("logo.png") no-repeat
+  height: 55px
+  +float-right
+  top: -58px
+  width: 116px
+  margin-right: 20px
+  z-index: 1
+  a
+    position: absolute
+    height: 100%
+    text-indent: -99999px
+    width: 100%
 
   // Main navigation
 .navigation
   position: absolute
-  right: 50px
-  bottom: 0
+  margin: 0 auto
+  width: 100%
   font-size: 14px
   z-index: 10
+  top: 2px
+  left: 50%
+  margin-left: -288px
+  clear: both
+  display: block
   ul
     position: relative
     +pie-clearfix
-    .sub-navigation
-      +pie-clearfix
-      display: none
-      position: absolute
-      right: 0
-      bottom: -30px
-      width: 900px
-      li, a
-        +float-right
-      li
-        margin-left: 0
-        a
-          background: #fff
-          background: rgba(#fff,.7)
-          display: block
-          font-size: 12px
-          line-height: 30px
-          padding: 0 12px
-          &:hover
-            background: #d3313a
+
     li
       +float-left
       position: relative
       display: block
       margin-left: 5px
       a
-        color: #d3313a
+        color: #fff
         display: block
         padding: 8px 20px
         text-decoration: none
@@ -92,34 +90,11 @@ body
           @extend .navigation-hover
 
 .navigation-hover
-  background: $nav_hover_bg_color
-  background: rgba($nav_hover_bg_color,$nav_hover_bg_opacity)
-  color: #fff
+  color: $accent-color
   
 // Navigation
-body.home a.home, body.about a.about, body.contact a.contact, body.blog a.blog, body.services li.services > a
+body.home a.home, body.about a.about, body.contact a.contact, body.gallery a.gallery, body.testimonials a.testimonials, body.services li.services > a
   @extend .navigation-hover
-  font-weight: bold
-
-// Subnavigation highlighting on section subpages
-body.tax li.tax > a
-  @extend .navigation-hover
-  font-weight: bold
-
-body.well li.well > a
-  @extend .navigation-hover
-  font-weight: bold
-
-
-body.health li.health > a
-  @extend .navigation-hover
-  font-weight: bold
-
-
-body.services
-  .services .sub-navigation
-    display: block !important
-    
 
 
   
@@ -133,31 +108,21 @@ body.services
   margin-left: -480px
   color: #fff
   z-index: 1
-  border: solid #fff 1px
+  border: solid #453419 2px
+  +border-radius(20px)
 
   
   
 
-body.home
-  // Content area
-  #content
-    .container
-      @extend .content-container
-      #featured
-        width: 960px
-        height: 450px
-        background: transparent
-        overflow: hidden
-        img, div
-          display: none
 
-body.page
+
+body.page, body.home
   // Content area
   #content
     .container
       @extend .grid-container
       @extend .content-container 
-      +border-radius(3px)
+      +border-radius(20px)
       +box-sizing(border-box)
       .left-container, .right-container
         +box-sizing(border-box)
@@ -165,14 +130,22 @@ body.page
         font-size: 18px
         line-height: 30px
         h1
-          font-size: 58px
+          font-size: 36px
           line-height: 60px
           margin-bottom: 20px
+          font-weight: 100
+          :text-transform uppercase
+        h2
+          display: block
+          padding-top: 10px
+          line-height: 16px
+          color: $accent-color
           
           
       .left-container
         +float-left
 //        width: 525px
+
       .right-container
         +float-right
         padding-left: 0
@@ -181,11 +154,8 @@ body.page
         font-size: 18px
         line-height: 1.2
         margin-bottom: 18px
-      h2
-        font-size: 14px
-        font-weight: bold
-        line-height: 1.2
-        margin-bottom: 5px
+        
+
       p
         line-height: 1.5
         margin-bottom: 18px

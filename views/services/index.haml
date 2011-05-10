@@ -1,0 +1,28 @@
+- @title = "Services"
+- @body_class = "page services"
+
+.left-container
+  .scrollbar-pane
+    %h1= @title
+    :markdown
+      Urbanscapes is skilled in handling all aspects of landscaping such as landscape design, commercial maintenance service, irrigation systems, plant installation, stone work, tree trimming, outdoor structures, hardscapes, outdoor lighting, swimming pool design  and outdoor living areas.
+      It is our goal to increase property value through creative landscaping designs that positively effects on our environment. We are dedicated to the Houston community and practice environmental responsibility in the interests of soil health and water-efficient practices.
+      <h2>Commercial:</h2>  We would be happy to evaluate your property and provide a hassle free maintenance proposal or landscape design.
+      <h2>Residential:</h2>  Let us provide you with a custom landscape design that is as unique as the personality of you and your home.
+
+/ .right-container
+/   %img{:src => "/images/parking-lot.jpg"}
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+      
+      $.ezBgResize({
+        img     : "/images/backgrounds/services.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 1,
+        center  : true
+      });
+      
+    });
