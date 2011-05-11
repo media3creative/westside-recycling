@@ -121,6 +121,7 @@ a:focus, a:active {
   margin-left: 0px;
 }
 
+@import url(_typography.css);
 .grid-pie-clearfix, .grid-container, body.page #content .container, body.home #content .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
   *zoom: 1;
 }
@@ -926,7 +927,7 @@ body.page #content .container .left-container, body.page #content .container .ri
 }
 body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
   font-size: 36px;
-  line-height: 60px;
+  line-height: 15px;
   margin-bottom: 20px;
   font-weight: 100;
   text-transform: uppercase;
@@ -937,6 +938,54 @@ body.page #content .container .left-container h2, body.page #content .container 
   line-height: 16px;
   color: #8ec741;
 }
+body.page #content .container .left-container #main_view, body.page #content .container .right-container #main_view, body.home #content .container .left-container #main_view, body.home #content .container .right-container #main_view {
+  display: inline;
+  float: left;
+  margin-left: -38px;
+  margin-top: 28px;
+  width: 300px;
+}
+body.page #content .container .left-container .gallery, body.page #content .container .right-container .gallery, body.home #content .container .left-container .gallery, body.home #content .container .right-container .gallery {
+  position: relative;
+  height: 360px;
+  width: 410px;
+}
+body.page #content .container .left-container #gallery-list li, body.page #content .container .right-container #gallery-list li, body.home #content .container .left-container #gallery-list li, body.home #content .container .right-container #gallery-list li {
+  height: 5px;
+  top: -10px;
+}
+body.page #content .container .left-container #gallery-list a, body.page #content .container .right-container #gallery-list a, body.home #content .container .left-container #gallery-list a, body.home #content .container .right-container #gallery-list a {
+  text-decoration: underline;
+  color: #aa865d;
+}
+body.page #content .container .left-container ul.thumb, body.page #content .container .right-container ul.thumb, body.home #content .container .left-container ul.thumb, body.home #content .container .right-container ul.thumb {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+body.page #content .container .left-container li, body.page #content .container .right-container li, body.home #content .container .left-container li, body.home #content .container .right-container li {
+  margin: 0;
+  padding: 5px;
+  float: left;
+  position: relative;
+  width: 110px;
+  height: 110px;
+}
+body.page #content .container .left-container li img, body.page #content .container .right-container li img, body.home #content .container .left-container li img, body.home #content .container .right-container li img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  background: #f0f0f0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -ms-interpolation-mode: bicubic;
+}
+body.page #content .container .left-container li img:hover, body.page #content .container .right-container li img:hover, body.home #content .container .left-container li img:hover, body.home #content .container .right-container li img:hover {
+  border: none;
+}
 body.page #content .container .left-container, body.home #content .container .left-container {
   display: inline;
   float: left;
@@ -944,7 +993,7 @@ body.page #content .container .left-container, body.home #content .container .le
 
 .scrollbar-pane {
   height: 420px;
-  overflow: hidden;
+  overflow: display;
   position: relative;
 }
 

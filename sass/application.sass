@@ -1,6 +1,6 @@
 @import base
 @import color_definitions
-
+@import _typography
 // Configure grid coordinates
 $grid-columns: 24
 $grid-width: 30px
@@ -118,7 +118,7 @@ body.page, body.home
         line-height: 30px
         h1
           font-size: 36px
-          line-height: 60px
+          line-height: 15px
           margin-bottom: 20px
           font-weight: 100
           :text-transform uppercase
@@ -127,8 +127,54 @@ body.page, body.home
           padding-top: 10px
           line-height: 16px
           color: $accent-color
+        //gallery
+
+        #main_view 
+          +float-left
+          margin-left: -38px
+          margin-top: 28px
+          width: 300px
+
+        .gallery 
+          position: relative
+          height: 360px
+          width: 410px
           
-          
+        #gallery-list
+          li
+            height: 5px
+            top: -10px
+          a
+            text-decoration: underline
+            color: #aa865d
+            
+        ul.thumb 
+          float: left
+          list-style: none
+          margin: 0
+          padding: 10px
+        li 
+          margin: 0
+          padding: 5px
+          float: left
+          position: relative
+          width: 110px
+          height: 110px
+          img 
+            width: 100px
+            height: 100px
+            border: 1px solid #ddd
+            padding: 5px
+            background: #f0f0f0
+            position: absolute
+            left: 0
+            top: 0
+            -ms-interpolation-mode: bicubic
+            &:hover 
+              border: none
+
+
+         
       .left-container
         +float-left
 //        width: 525px
@@ -158,7 +204,7 @@ body.page, body.home
 
 .scrollbar-pane
   height: 420px
-  overflow: hidden
+  overflow: display
   position: relative
 
 .scrollbar-handle-container
@@ -186,3 +232,5 @@ body.page, body.home
   background: $scrollbar-handle-down-color
   &:hover
     background: $scrollbar-handle-down-hover-color
+    
+    
