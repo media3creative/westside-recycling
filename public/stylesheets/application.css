@@ -807,48 +807,39 @@ a:focus, a:active {
 body {
   background: white;
   font-size: 12px;
-  border-top: white 90px solid;
 }
 
 h1 {
   color: #8ec741;
 }
 
-#brand {
-  position: absolute;
-  background: transparent url('../images/brand.png?1305054464') no-repeat;
+#mast-header {
+  position: relative;
   width: 100%;
   height: 114px;
-  top: -86px;
-  z-index: 6;
+  top: -10px;
+  background: url('../images/top-bar.jpg?1305056463') repeat-x;
+}
+#mast-header #brand {
+  position: relative;
+  width: 897px;
+  height: 114px;
+  background: transparent url('../images/brand.png?1305054464') no-repeat;
   margin: 0 auto;
-  left: 50%;
-  margin-left: -447px;
-  clear: both;
-  display: block;
 }
 
-#mast-header {
-  position: absolute;
-  background: #453419;
-  width: 100%;
-  height: 28px;
-  top: 66px;
-  z-index: 5;
-}
-
-.logo {
+#logo {
   position: relative;
   background: url('../images/logo.png?1305055529') no-repeat;
   height: 55px;
   display: inline;
   float: right;
-  top: -58px;
   width: 116px;
+  top: -88px;
   margin-right: 20px;
   z-index: 1;
 }
-.logo a {
+#logo a {
   position: absolute;
   height: 100%;
   text-indent: -99999px;
@@ -858,14 +849,10 @@ h1 {
 .navigation {
   position: absolute;
   margin: 0 auto;
-  width: 100%;
+  width: 64%;
   font-size: 14px;
-  z-index: 10;
-  top: 2px;
-  left: 50%;
-  margin-left: -288px;
-  clear: both;
-  display: block;
+  top: 88px;
+  left: 167px;
 }
 .navigation ul {
   position: relative;
