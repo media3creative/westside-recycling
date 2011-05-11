@@ -1,7 +1,34 @@
-The layout for the splash page is located in /views/splash/_layout.haml.
-<br/><br/>
-= yield 
-<br/><br/>
-If the layout for the splash page is the same as the rest of the site, you can remove /views/splash/_layout.haml, or you can change it's contents to read:
-<br/><br/>
-="= render :template => '/layouts/application.haml'"
+%html
+  %head
+    %title Swift Sessions
+    %meta{:content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type"}/
+    %script{:src => "js/swfobject.js", :type => "text/javascript"}
+    %style{:media => "screen", :type => "text/css"}
+      body {
+      margin:0;
+      text-align:center;
+      background-color:#fff;
+      color:#999;
+      }
+      \#container{
+      width: 800px;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+      }
+      img{
+      border-style: none;
+      border:none;
+      border-color: none;
+      border-width: 0px;
+      margin-top: 200px
+      }
+      img{
+      border-style: none;
+      border:none;
+      border-color: none;
+      border-width: 0px;
+      }
+  %body
+    #container
+      %img{:src => "images/swift_underconstruction.jpg"}/
