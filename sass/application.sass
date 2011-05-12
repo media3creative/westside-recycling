@@ -1,6 +1,5 @@
 @import base
 @import color_definitions
-@import _typography
 // Configure grid coordinates
 $grid-columns: 24
 $grid-width: 30px
@@ -17,7 +16,7 @@ body
   
 h1
   :color ($accent-color)
-  
+  @extend .ff-dagny
 // Here down is project level
 
 
@@ -53,12 +52,13 @@ h1
 
   // Main navigation
 .navigation
+  @extend .ff-dagny
   position: absolute
   margin: 0 auto
-  width: 64%
+  width: 80%
   font-size: 14px
   top: 88px
-  left: 167px
+  left: 126px
   ul
     position: relative
     +pie-clearfix
@@ -82,6 +82,7 @@ h1
 // Navigation
 body.home a.home, body.about a.about, body.contact a.contact, body.gallery a.gallery, body.testimonials a.testimonials, body.services li.services > a
   @extend .navigation-hover
+  
 
 
   
@@ -109,6 +110,7 @@ body.page, body.home
     .container
       @extend .grid-container
       @extend .content-container 
+      @extend .font-helvetica
       +border-radius(20px)
       +box-sizing(border-box)
       .left-container, .right-container
@@ -116,38 +118,30 @@ body.page, body.home
         padding: 35px 15px 15px 15px
         font-size: 18px
         line-height: 30px
+        width: 970px
         h1
           font-size: 36px
           line-height: 15px
           margin-bottom: 20px
-          font-weight: 100
           :text-transform uppercase
+          @extend .ff-dagny
         h2
           display: block
           padding-top: 10px
           line-height: 16px
           color: $accent-color
+          
+          
         //gallery
-
         #main_view 
           +float-left
-          margin-left: -38px
-          margin-top: 28px
-          width: 300px
 
         .gallery 
           position: relative
-          height: 360px
-          width: 410px
-          
-        #gallery-list
-          li
-            height: 5px
-            top: -10px
-          a
-            text-decoration: underline
-            color: #aa865d
-            
+          width: 388px
+          top: -7px
+          +box-sizing(border-box)          
+
         ul.thumb 
           float: left
           list-style: none
@@ -187,6 +181,7 @@ body.page, body.home
         font-size: 18px
         line-height: 1.2
         margin-bottom: 18px
+        @extend .ff-dagny
         
 
       p

@@ -39,11 +39,11 @@ table {
   border-spacing: 0;
 }
 
-.font-helvetica, body {
+.font-helvetica, body, body.page #content .container, body.home #content .container {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.ff-dagny, .m3c-bar {
+.ff-dagny, .m3c-bar, h1, .navigation, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
   font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
@@ -121,7 +121,6 @@ a:focus, a:active {
   margin-left: 0px;
 }
 
-@import url(_typography.css);
 .grid-pie-clearfix, .grid-container, body.page #content .container, body.home #content .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
   *zoom: 1;
 }
@@ -850,10 +849,10 @@ h1 {
 .navigation {
   position: absolute;
   margin: 0 auto;
-  width: 64%;
+  width: 80%;
   font-size: 14px;
   top: 88px;
-  left: 167px;
+  left: 126px;
 }
 .navigation ul {
   position: relative;
@@ -924,12 +923,12 @@ body.page #content .container .left-container, body.page #content .container .ri
   padding: 35px 15px 15px 15px;
   font-size: 18px;
   line-height: 30px;
+  width: 970px;
 }
 body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
   font-size: 36px;
   line-height: 15px;
   margin-bottom: 20px;
-  font-weight: 100;
   text-transform: uppercase;
 }
 body.page #content .container .left-container h2, body.page #content .container .right-container h2, body.home #content .container .left-container h2, body.home #content .container .right-container h2 {
@@ -941,22 +940,15 @@ body.page #content .container .left-container h2, body.page #content .container 
 body.page #content .container .left-container #main_view, body.page #content .container .right-container #main_view, body.home #content .container .left-container #main_view, body.home #content .container .right-container #main_view {
   display: inline;
   float: left;
-  margin-left: -38px;
-  margin-top: 28px;
-  width: 300px;
 }
 body.page #content .container .left-container .gallery, body.page #content .container .right-container .gallery, body.home #content .container .left-container .gallery, body.home #content .container .right-container .gallery {
   position: relative;
-  height: 360px;
-  width: 410px;
-}
-body.page #content .container .left-container #gallery-list li, body.page #content .container .right-container #gallery-list li, body.home #content .container .left-container #gallery-list li, body.home #content .container .right-container #gallery-list li {
-  height: 5px;
-  top: -10px;
-}
-body.page #content .container .left-container #gallery-list a, body.page #content .container .right-container #gallery-list a, body.home #content .container .left-container #gallery-list a, body.home #content .container .right-container #gallery-list a {
-  text-decoration: underline;
-  color: #aa865d;
+  width: 388px;
+  top: -7px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body.page #content .container .left-container ul.thumb, body.page #content .container .right-container ul.thumb, body.home #content .container .left-container ul.thumb, body.home #content .container .right-container ul.thumb {
   float: left;

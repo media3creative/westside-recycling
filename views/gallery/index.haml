@@ -4,46 +4,42 @@
 
 
 .left-container
-  .scrollbar-pane
-    %h1= @title
-    .gallery
-      %ul.thumb
-        %li
-          %a{:href => "images/main_image1.jpg"}
-            %img{:alt => "", :src => "images/thumb1.jpg"}/
-        %li
-          %a{:href => "images/main_image2.jpg"}
-            %img{:alt => "", :src => "images/thumb2.jpg"}/
-        %li
-          %a{:href => "main_image3.jpg"}
-            %img{:alt => "", :src => "images/thumb3.jpg"}/
-        %li
-          %a{:href => "main_image4.jpg"}
-            %img{:alt => "", :src => "images/thumb4.jpg"}/
-        %li
-          %a{:href => "main_image5.jpg"}
-            %img{:alt => "", :src => "images/thumb3.jpg"}/
-        %li
-          %a{:href => "main_image6.jpg"}
-            %img{:alt => "", :src => "images/thumb3.jpg"}/
-        %li
-          %a{:href => "main_image7.jpg"}
-            %img{:alt => "", :src => "images/thumb3.jpg"}/
-        %li
-          %a{:href => "main_image8.jpg"}
-            %img{:alt => "", :src => "images/thumb3.jpg"}/
-        %li
-          %a{:href => "main_image9.jpg"}
-            %img{:alt => "", :src => "images/thumb3.jpg"}/
-.right-container
-  #gallery-list
-    %ul
-      %li.commercial
-        = link_to "Commercial", "/commercial", :class => "commercial"
-      %li.residential
-        = link_to "Residential", "/residential", :class => "residential"
-
-  
+  %h1= @title
+  / #gallery-list
+  /   %ul
+  /     %li.commercial
+  /       = link_to "Commercial", "/commercial", :class => "commercial"
+  /     %li.residential
+  /       = link_to "Residential", "/residential", :class => "residential"
+  .gallery
+    %ul.thumb
+      %li
+        %a{:href => "images/main_image1.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
+      %li
+        %a{:href => "images/main_image1.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
+      %li
+        %a{:href => "main_image3.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
+      %li
+        %a{:href => "main_image4.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
+      %li
+        %a{:href => "main_image5.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
+      %li
+        %a{:href => "main_image6.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
+      %li
+        %a{:href => "main_image7.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
+      %li
+        %a{:href => "main_image8.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
+      %li
+        %a{:href => "main_image9.jpg"}
+          %img{:alt => "", :src => "images/thumb1.jpg"}/
   #main_view
     %a{:target => "_blank", :title => ""}
       %img{:alt => "", :src => "images/main_image1.jpg"}/
