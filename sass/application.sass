@@ -106,9 +106,29 @@ body.home a.home, body.about a.about, body.contact a.contact, body.gallery a.gal
   +border-radius(20px)
 
   
-  
-
-
+.contact-container
+  position: absolute
+  top: 50%
+  left: 50%
+  height: 450px
+  margin-top: -190px
+  margin-left: -485px
+  margin-right: 30px
+  color: #fff
+  z-index: 1
+  iframe
+    position: absolute
+    overflow: hidden
+    top: 59px
+    margin-left: -980px
+    height: 330px    
+  h1
+    @extend .ff-dagny
+    font-size: 36px
+    line-height: 15px
+    margin-bottom: 20px
+    :text-transform uppercase
+    color: $accent-color
 
 body.page, body.home
   // Content area
@@ -237,10 +257,3 @@ body.page, body.home
     background: $scrollbar-handle-down-hover-color
     
     
-iframe
-  position: absolute
-  overflow: hidden
-  top: 59px
-  margin-left: -970px
-  height: 330px
-  clear: both

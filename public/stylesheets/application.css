@@ -43,7 +43,7 @@ table {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.ff-dagny, .m3c-bar, .navigation, body.page #content .container, body.home #content .container, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
+.ff-dagny, .m3c-bar, .navigation, .contact-container h1, body.page #content .container, body.home #content .container, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
   font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
@@ -125,7 +125,7 @@ a:focus, a:active {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.ff-dagny, .m3c-bar, .navigation, body.page #content .container, body.home #content .container, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
+.ff-dagny, .m3c-bar, .navigation, .contact-container h1, body.page #content .container, body.home #content .container, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
   font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
@@ -917,6 +917,32 @@ body.splash #mast-header, body.splash #mast-header {
   border-radius: 20px;
 }
 
+.contact-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 450px;
+  margin-top: -190px;
+  margin-left: -485px;
+  margin-right: 30px;
+  color: white;
+  z-index: 1;
+}
+.contact-container iframe {
+  position: absolute;
+  overflow: hidden;
+  top: 59px;
+  margin-left: -980px;
+  height: 330px;
+}
+.contact-container h1 {
+  font-size: 36px;
+  line-height: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #8ec741;
+}
+
 body.page #content .container, body.home #content .container {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -1041,13 +1067,4 @@ body.page #content .container .left-container, body.home #content .container .le
 }
 .scrollbar-handle-down:hover {
   background: #555555;
-}
-
-iframe {
-  position: absolute;
-  overflow: hidden;
-  top: 59px;
-  margin-left: -970px;
-  height: 330px;
-  clear: both;
 }
