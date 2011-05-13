@@ -44,7 +44,7 @@ table {
 }
 
 .ff-dagny, .m3c-bar, .navigation, body.page #content .container, body.home #content .container, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
-  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", garamond;
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
 .m3c-bar {
@@ -126,7 +126,7 @@ a:focus, a:active {
 }
 
 .ff-dagny, .m3c-bar, .navigation, body.page #content .container, body.home #content .container, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
-  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", garamond;
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
 .grid-pie-clearfix, .grid-container, body.page #content .container, body.home #content .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
@@ -856,7 +856,7 @@ body {
   width: 80%;
   font-size: 14px;
   top: 88px;
-  left: 126px;
+  left: 148px;
 }
 .navigation ul {
   position: relative;
@@ -892,7 +892,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: rgba(69, 52, 25, 0.85);
+  background: url('../images/trans-bg.png?1305298408') repeat;
   height: 450px;
   margin-top: -190px;
   margin-left: -480px;
