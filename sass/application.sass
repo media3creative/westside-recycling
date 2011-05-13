@@ -1,5 +1,6 @@
 @import base
 @import color_definitions
+@import partials/typography
 // Configure grid coordinates
 $grid-columns: 24
 $grid-width: 30px
@@ -10,13 +11,8 @@ $grid-gutter-width: 10px
 +grid-coordinates
 
 body
-  @extend .font-helvetica
   background: #fff
   font-size: 12px
-  
-h1
-  :color ($accent-color)
-  @extend .ff-dagny
 // Here down is project level
 
 
@@ -58,7 +54,7 @@ h1
   width: 80%
   font-size: 14px
   top: 88px
-  left: 126px
+  left: 148px
   ul
     position: relative
     +pie-clearfix
@@ -110,7 +106,7 @@ body.page, body.home
     .container
       @extend .grid-container
       @extend .content-container 
-      @extend .font-helvetica
+      @extend .ff-dagny
       +border-radius(20px)
       +box-sizing(border-box)
       .left-container, .right-container
@@ -120,11 +116,13 @@ body.page, body.home
         line-height: 30px
         width: 970px
         h1
+          @extend .ff-dagny
           font-size: 36px
           line-height: 15px
           margin-bottom: 20px
           :text-transform uppercase
-          @extend .ff-dagny
+          color: $accent-color
+
         h2
           display: block
           padding-top: 10px

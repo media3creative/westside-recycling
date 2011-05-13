@@ -39,12 +39,12 @@ table {
   border-spacing: 0;
 }
 
-.font-helvetica, body, body.page #content .container, body.home #content .container {
+.font-helvetica {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.ff-dagny, .m3c-bar, h1, .navigation, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
-  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
+.ff-dagny, .m3c-bar, .navigation, body.page #content .container, body.home #content .container, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", garamond;
 }
 
 .m3c-bar {
@@ -119,6 +119,14 @@ a:focus, a:active {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
+}
+
+.font-helvetica {
+  font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
+}
+
+.ff-dagny, .m3c-bar, .navigation, body.page #content .container, body.home #content .container, body.page #content .container .left-container h1, body.page #content .container .right-container h1, body.home #content .container .left-container h1, body.home #content .container .right-container h1 {
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", garamond;
 }
 
 .grid-pie-clearfix, .grid-container, body.page #content .container, body.home #content .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
@@ -809,10 +817,6 @@ body {
   font-size: 12px;
 }
 
-h1 {
-  color: #8ec741;
-}
-
 #mast-header {
   position: relative;
   width: 100%;
@@ -930,6 +934,7 @@ body.page #content .container .left-container h1, body.page #content .container 
   line-height: 15px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  color: #8ec741;
 }
 body.page #content .container .left-container h2, body.page #content .container .right-container h2, body.home #content .container .left-container h2, body.home #content .container .right-container h2 {
   display: block;
