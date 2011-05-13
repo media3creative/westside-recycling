@@ -1042,3 +1042,12 @@ body.page #content .container .left-container, body.home #content .container .le
 .scrollbar-handle-down:hover {
   background: #555555;
 }
+
+iframe {
+  position: absolute;
+  overflow: hidden;
+  top: 59px;
+  margin-left: -970px;
+  height: 330px;
+  clear: both;
+}
