@@ -30,6 +30,12 @@ body
     background: transparent image-url("brand.png") no-repeat
     margin: 0 auto 
 
+body.splash #mast-header
+  @extend #mast-header
+  position: absolute
+  top: 50%
+  margin-top: -100px
+
 // Site logo
 #logo
   position: relative
@@ -45,6 +51,10 @@ body
     height: 100%
     text-indent: -99999px
     width: 100%
+    
+#splash-logo
+  @extend #logo
+  top: 10px
 
   // Main navigation
 .navigation
