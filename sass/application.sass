@@ -7,16 +7,12 @@ $grid-width: 30px
 $grid-gutter-width: 10px
 
 @import grid-coordinates
-
 +grid-coordinates
 
 body
   background: #fff
   font-size: 12px
 // Here down is project level
-
-
-  
 #mast-header
   position: relative
   width: 100%
@@ -77,7 +73,7 @@ body.splash #mast-header
       a
         color: #fff
         display: block
-        padding: 8px 20px
+        padding: 6px 20px
         text-decoration: none
         &:hover
           @extend .navigation-hover
@@ -88,9 +84,6 @@ body.splash #mast-header
 // Navigation
 body.home a.home, body.about a.about, body.contact a.contact, body.gallery a.gallery, body.testimonials a.testimonials, body.services li.services > a
   @extend .navigation-hover
-  
-
-
   
 .content-container
   position: absolute
@@ -104,7 +97,6 @@ body.home a.home, body.about a.about, body.contact a.contact, body.gallery a.gal
   z-index: 1
   border: solid #453419 2px
   +border-radius(20px)
-
   
 .contact-container
   position: absolute
@@ -129,7 +121,21 @@ body.home a.home, body.about a.about, body.contact a.contact, body.gallery a.gal
     margin-bottom: 20px
     :text-transform uppercase
     color: $accent-color
-
+    
+//gallery navigation
+ul.tabNavigation 
+  float: right
+  list-style: none
+  margin-top: -39px
+  a
+    padding: 0 20px
+    color: $accent-color
+  li.tabNavigation
+    margin: 0
+    padding: 5px
+    float: left
+    position: relative
+    
 body.page, body.home
   // Content area
   #content
@@ -152,30 +158,25 @@ body.page, body.home
           margin-bottom: 20px
           :text-transform uppercase
           color: $accent-color
-
         h2
           display: block
           padding-top: 10px
           line-height: 16px
           color: $accent-color
-          
-          
         //gallery
-        #main_view 
+        .main_view 
           +float-left
-
         .gallery 
           position: relative
           width: 388px
           top: -7px
-          +box-sizing(border-box)          
-
+          +box-sizing(border-box) 
         ul.thumb 
           float: left
           list-style: none
           margin: 0
           padding: 10px
-        li 
+        li.thumb 
           margin: 0
           padding: 5px
           float: left
@@ -195,12 +196,9 @@ body.page, body.home
             &:hover 
               border: none
 
-
          
       .left-container
         +float-left
-//        width: 525px
-
       .right-container
         +float-right
         padding-left: 0
@@ -210,8 +208,6 @@ body.page, body.home
         line-height: 1.2
         margin-bottom: 18px
         @extend .ff-dagny
-        
-
       p
         line-height: 1.5
         margin-bottom: 18px
@@ -224,7 +220,6 @@ body.page, body.home
           line-height: 1.5
 
 // Scrollbar Pane
-
 .scrollbar-pane
   height: 420px
   overflow: display
@@ -255,5 +250,3 @@ body.page, body.home
   background: $scrollbar-handle-down-color
   &:hover
     background: $scrollbar-handle-down-hover-color
-    
-    

@@ -11,38 +11,101 @@
   /       = link_to "Commercial", "/commercial", :class => "commercial"
   /     %li.residential
   /       = link_to "Residential", "/residential", :class => "residential"
-  .gallery
-    %ul.thumb
-      %li
-        %a{:href => "images/main_image1.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-      %li
-        %a{:href => "images/main_image1.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-      %li
-        %a{:href => "main_image3.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-      %li
-        %a{:href => "main_image4.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-      %li
-        %a{:href => "main_image5.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-      %li
-        %a{:href => "main_image6.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-      %li
-        %a{:href => "main_image7.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-      %li
-        %a{:href => "main_image8.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-      %li
-        %a{:href => "main_image9.jpg"}
-          %img{:alt => "", :src => "images/thumb1.jpg"}/
-  #main_view
-    %a{:target => "_blank", :title => ""}
-      %img{:alt => "", :src => "images/main_image1.jpg"}/
+  
+  
+  .tabs
+    %ul.tabNavigation
+      %li.tabNavigation
+        %a{:href => "#first"} Residential
+      %li.tabNavigation
+        %a{:href => "#second"} Commercial
+      %li.tabNavigation
+        %a{:href => "#third"} Third
+    #first
+      .gallery
+        %ul.thumb
+          %li.thumb
+            %a{:href => "images/main_image1.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "images/main_image1.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image3.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image4.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image5.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image6.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image7.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image8.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image9.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+      .main_view
+        %a{:target => "_blank", :title => ""}
+          %img{:alt => "", :src => "images/main_image1.jpg"}/
+    #second
+      .gallery
+        %ul.thumb
+          %li.thumb
+            %a{:href => "images/main_image1.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "images/main_image1.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image3.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "images/main_image1.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image3.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "images/main_image1.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+
+      .main_view
+        %a{:target => "_blank", :title => ""}
+          %img{:alt => "", :src => "images/main_image1.jpg"}/
+          
+    #third
+      .gallery
+        %ul.thumb
+          %li.thumb
+            %a{:href => "images/main_image1.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "images/main_image1.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image3.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image4.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+          %li.thumb
+            %a{:href => "main_image5.jpg"}
+              %img{:alt => "", :src => "images/thumb1.jpg"}/
+
+      .main_view
+        %a{:target => "_blank", :title => ""}
+          %img{:alt => "", :src => "images/main_image1.jpg"}/
+
+  
+  
+  
 
 - content_for :page_javascript do
   :javascript
@@ -56,4 +119,17 @@
         center  : true
       });
       
+    });
+  %script{:charset => "utf-8", :type => "text/javascript"}
+    $(function () {
+    var tabContainers = $('div.tabs > div');
+    tabContainers.hide().filter(':first').show();
+  
+    $('div.tabs ul.tabNavigation a').click(function () {
+    tabContainers.hide();
+    tabContainers.filter(this.hash).show();
+    $('div.tabs ul.tabNavigation a').removeClass('selected');
+    $(this).addClass('selected');
+    return false;
+    }).filter(':first').click();
     });
