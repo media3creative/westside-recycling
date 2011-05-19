@@ -1,3 +1,5 @@
+@import color_definitions
+
 =m3c-bar
   .m3c-bar
     @extend .ff-dagny
@@ -5,10 +7,9 @@
     left: 0
     bottom: 0
     +clearfix
-    background: #453419
-    background: rgba(#453419,.8)
-    border-top: 1px solid rgba(#8ec741,.8)
-    color: #fff
+    background: #fff
+    border-top: 1px solid rgba($accent-color,.8)
+    color: #000
     font-size: 9px
     font-family: Arial
     letter-spacing: 1px
@@ -22,11 +23,11 @@
       +float-right
       padding-right: 50px
     a
-      color: #8ec741
+      color: $accent-color
       text-decoration: none
       &:hover
-        color: #8ec741
-        border-bottom: 1px solid #eee
+        color: $accent-color
+        border-bottom: 1px solid #222
         text-decoration: none
 
 +m3c-bar

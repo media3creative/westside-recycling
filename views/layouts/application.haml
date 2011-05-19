@@ -1,4 +1,4 @@
-- @sitename = "Urbanscapes"
+- @sitename = "Swift Sessions"
 - @typekit_id = "dgk5bzo"
 
 !!! 5
@@ -21,27 +21,23 @@
   %body{:class => @body_class}
     %header
     #mast-header
-      #brand
-        .navigation
-          %ul
-            %li.home
-              = link_to "HOME", "/home", :class => "home"
-            %li.about
-              = link_to "ABOUT", "/about", :class => "about"
-            %li.services
-              = link_to "SERVICES", "/services", :class => "services"
-            %li.gallery
-              = link_to "GALLERY", "/gallery", :class => "gallery"
-            %li.contact
-              = link_to "CONTACT", "/contact", :class => "contact"
-            %li.testimonials
-              = link_to "TESTIMONIALS", "/testimonials", :class => "testimonials"
-      #logo
-        %a{:href => "/home"}
-          = @sitename
+      .navigation
+        %ul
+          %li.home
+            = link_to "HOME", "/home", :class => "home"
+          %li.about
+            = link_to "ABOUT", "/about", :class => "about"
+          %li.services
+            = link_to "SERVICES", "/services", :class => "services"
+          %li.contact
+            = link_to "CONTACT", "/contact", :class => "contact"
+    #logo
+      %a{:href => "/home"}
+        = @sitename
     #content
       .container
         = yield
+    #logo2
     .m3c-bar
       .copyright
         :markdown

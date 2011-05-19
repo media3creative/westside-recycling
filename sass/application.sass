@@ -16,51 +16,53 @@ body
 #mast-header
   position: relative
   width: 100%
-  height: 114px
+  height: 95px
   top: -10px
-  background: image-url("top-bar.jpg") repeat-x 
-  #brand
-    position: relative
-    width: 897px
-    height: 114px
-    background: transparent image-url("brand.png") no-repeat
-    margin: 0 auto 
-
-body.splash #mast-header
-  @extend #mast-header
-  position: absolute
-  top: 50%
-  margin-top: -100px
-
+  background: #fff
+#banner
+  position: relative
+  width: 784px
+  height: 170px
+  background: transparent image-url("swift-sessions-home.png") no-repeat
+  margin: 0 auto
+  top: 18px
+  
+   
 // Site logo
 #logo
-  position: relative
+  position: absolute
   background: image-url("logo.png") no-repeat
-  height: 55px
-  +float-right
-  width: 116px
-  top: -88px
-  margin-right: 20px
+  height: 69px
+  +float-left
+  width: 275px
+  top: 0
+  margin-left: 60px
+  margin-top: 8px
   z-index: 1
   a
     position: absolute
     height: 100%
     text-indent: -99999px
     width: 100%
-    
-#splash-logo
-  @extend #logo
-  top: 10px
-
+#logo2
+  position: absolute
+  background: image-url("logo2.png") no-repeat
+  height: 96px
+  width:  81px
+  +float-right
+  bottom: 40px
+  right: 30px
+  margin-right: 40px
+  z-index: 1
   // Main navigation
 .navigation
-  @extend .ff-dagny
-  position: absolute
+  @extend .font-helvetica
+  position: relative
+  +float-right
   margin: 0 auto
-  width: 80%
   font-size: 14px
-  top: 88px
-  left: 148px
+  top: 68px
+  right: 40px
   ul
     position: relative
     +pie-clearfix
@@ -71,7 +73,7 @@ body.splash #mast-header
       display: block
       margin-left: 5px
       a
-        color: #fff
+        color: $accent-color
         display: block
         padding: 6px 20px
         text-decoration: none
@@ -79,81 +81,68 @@ body.splash #mast-header
           @extend .navigation-hover
 
 .navigation-hover
-  color: $accent-color
+  color: #000
   
 // Navigation
-body.home a.home, body.about a.about, body.contact a.contact, body.gallery a.gallery, body.testimonials a.testimonials, body.services li.services > a
+body.home a.home, body.about a.about, body.contact a.contact, body.services li.services > a
   @extend .navigation-hover
   
-.content-container
+#contact-container
+  @extend .grid-container
+  @extend .font-helvetica
+  +box-sizing(border-box)
   position: absolute
-  top: 50%
-  left: 50%
-  background: image-url("trans-bg.png") repeat
-  height: 450px
+  top: 56%
+  right: 18%
+  width: 55%
   margin-top: -190px
   margin-left: -480px
   color: #fff
   z-index: 1
-  border: solid #453419 2px
-  +border-radius(20px)
-  
-.contact-container
-  position: absolute
-  top: 50%
-  left: 50%
-  height: 450px
-  margin-top: -190px
-  margin-left: -485px
-  margin-right: 30px
   color: #fff
   z-index: 1
   iframe
     position: absolute
     overflow: hidden
+    margin-left: 10px
     top: 59px
-    margin-left: -980px
     height: 330px    
   h1
-    @extend .ff-dagny
-    font-size: 36px
-    line-height: 15px
-    margin-bottom: 20px
+    @extend .font-helvetica
+    font-size: 42px
+    margin: 24px 0 -20px 16px
+
     :text-transform uppercase
     color: $accent-color
     
-//gallery navigation
-ul.tabNavigation 
-  float: right
-  list-style: none
-  margin-top: -39px
-  a
-    padding: 0 20px
-    color: $accent-color
-  li.tabNavigation
-    margin: 0
-    padding: 5px
-    float: left
-    position: relative
-    
-body.page, body.home
+body.page
   // Content area
   #content
     .container
       @extend .grid-container
-      @extend .content-container 
-      @extend .ff-dagny
-      +border-radius(20px)
+      width: 55%
+      @extend .font-helvetica
       +box-sizing(border-box)
-      .left-container, .right-container
+      position: absolute
+      top: 55%
+      right: 18%
+      margin-top: -190px
+      margin-left: -480px
+      background: #000
+      color: #fff
+      z-index: 1
+      border-bottom: solid #fff 2px
+      .left-container
         +box-sizing(border-box)
         padding: 35px 15px 15px 15px
         font-size: 18px
         line-height: 30px
-        width: 970px
+        width: 100%
+        +float-left
+        
         h1
-          @extend .ff-dagny
-          font-size: 36px
+          @extend .font-helvetica
+          font-size: 42px
           line-height: 15px
           margin-bottom: 20px
           :text-transform uppercase
@@ -163,42 +152,7 @@ body.page, body.home
           padding-top: 10px
           line-height: 16px
           color: $accent-color
-        //gallery
-        .main_view 
-          +float-left
-        .gallery 
-          position: relative
-          width: 388px
-          top: -7px
-          +box-sizing(border-box) 
-        ul.thumb 
-          float: left
-          list-style: none
-          margin: 0
-          padding: 10px
-        li.thumb 
-          margin: 0
-          padding: 5px
-          float: left
-          position: relative
-          width: 110px
-          height: 110px
-          img 
-            width: 100px
-            height: 100px
-            border: 1px solid #ddd
-            padding: 5px
-            background: #f0f0f0
-            position: absolute
-            left: 0
-            top: 0
-            -ms-interpolation-mode: bicubic
-            &:hover 
-              border: none
 
-         
-      .left-container
-        +float-left
       .right-container
         +float-right
         padding-left: 0
@@ -207,7 +161,7 @@ body.page, body.home
         font-size: 18px
         line-height: 1.2
         margin-bottom: 18px
-        @extend .ff-dagny
+        @extend .font-helvetica
       p
         line-height: 1.5
         margin-bottom: 18px
@@ -221,7 +175,7 @@ body.page, body.home
 
 // Scrollbar Pane
 .scrollbar-pane
-  height: 420px
+  height: 100%
   overflow: display
   position: relative
 
