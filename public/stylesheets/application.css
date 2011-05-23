@@ -39,7 +39,7 @@ table {
   border-spacing: 0;
 }
 
-.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.page #content .container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
+.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -121,7 +121,7 @@ a:focus, a:active {
   margin-left: 0px;
 }
 
-.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.page #content .container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
+.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -814,7 +814,7 @@ a:focus, a:active {
 
 body {
   background: black;
-  font-size: 12px;
+  font-size: 14px;
   overflow: hidden;
 }
 
@@ -833,16 +833,16 @@ p.name {
   font-size: 80%;
   color: #eeeeee;
   margin: 0;
-  line-height: 12px;
   font-weight: bold;
+  margin-bottom: 13px;
+  line-height: 12px;
 }
 
 p.who {
   font-size: 80%;
   color: #eeeeee;
   margin: 0;
-  line-height: 13px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #testimony-image {
@@ -856,7 +856,7 @@ p.who {
 }
 
 p.link {
-  margin-top: -30px;
+  margin-top: -20px;
   font-size: 85%;
   text-decoration: underline;
   color: #cc0000;
@@ -1000,7 +1000,6 @@ body.page #content .container .left-container {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 35px 15px 15px 15px;
-  font-size: 18px;
   line-height: 30px;
   width: 100%;
   display: inline;
@@ -1018,30 +1017,6 @@ body.page #content .container .left-container h2 {
   padding-top: 10px;
   line-height: 16px;
   color: #cc0000;
-}
-body.page #content .container .right-container {
-  display: inline;
-  float: right;
-  padding-left: 0;
-  width: 435px;
-}
-body.page #content .container h1 {
-  font-size: 18px;
-  line-height: 1.2;
-  margin-bottom: 18px;
-}
-body.page #content .container p {
-  line-height: 1.5;
-  margin-bottom: 18px;
-  padding-right: 15px;
-}
-body.page #content .container ul {
-  list-style: disc;
-  margin-bottom: 15px;
-  padding-left: 15px;
-}
-body.page #content .container ul li {
-  line-height: 1.5;
 }
 
 body.wideServices #content .container {
