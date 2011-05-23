@@ -1,21 +1,27 @@
 - @title = "Contact"
 - @body_class = "contact"
 
-.left-container
-  #contact-container
-    %h1= @title
-    :plain
-    <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+%style{ :type => "text/css" }
+  :sass
+    html
+      :overflow hidden
 
-    <script type="text/javascript">
-    var z7p9p1 = new WufooForm();
-    z7p9p1.initialize({
-    'userName':'media3creative', 
-    'formHash':'z7p9p1', 
-    'autoResize':true,
-    'width':'100%'});
-    z7p9p1.display();
-    </script>
+.container
+  .left-container
+    #contact-container
+      %h1= @title
+      :plain
+      <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+      <script type="text/javascript">
+      var z7p9p1 = new WufooForm();
+      z7p9p1.initialize({
+      'userName':'media3creative', 
+      'formHash':'z7p9p1', 
+      'autoResize':true,
+      'width':'100%'});
+      z7p9p1.display();
+      </script>
 
 
 
@@ -32,3 +38,8 @@
         center  : true
       });
     });
+    $(document).ready(function(){
+        	$("#contact-container").ready(function(){
+        		$("#contact-container").animate({right:'18%'}, 1000);				   
+        	});			   
+        });

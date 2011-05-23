@@ -2,6 +2,9 @@
 - @body_class = "home"
 
 
+
+
+
 #banner
 
 - content_for :page_javascript do
@@ -16,4 +19,10 @@
         center  : true
       });
 
+    });
+    
+    $(document).ready(function(){
+    	$("#banner").ready(function(){
+    		$("#banner").animate({width:'784px'}, 1000);				   
+    	});			   
     });

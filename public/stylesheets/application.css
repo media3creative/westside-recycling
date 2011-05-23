@@ -814,6 +814,7 @@ a:focus, a:active {
 body {
   background: white;
   font-size: 12px;
+  overflow: hidden;
 }
 
 #mast-header {
@@ -826,7 +827,7 @@ body {
 
 #banner {
   position: relative;
-  width: 784px;
+  width: 0px;
   height: 170px;
   background: transparent url('../images/swift-sessions-home.png?1305839090') no-repeat;
   margin: 0 auto;
@@ -911,7 +912,7 @@ body {
   box-sizing: border-box;
   position: absolute;
   top: 56%;
-  right: 18%;
+  right: -100%;
   width: 55%;
   margin-top: -190px;
   margin-left: -480px;
@@ -925,7 +926,6 @@ body {
   overflow: hidden;
   margin-left: 10px;
   top: 59px;
-  height: 330px;
 }
 #contact-container h1 {
   font-size: 42px;
@@ -942,9 +942,8 @@ body.page #content .container {
   box-sizing: border-box;
   position: absolute;
   top: 55%;
-  right: 18%;
+  right: -100%;
   margin-top: -190px;
-  margin-left: -480px;
   background: black;
   color: white;
   z-index: 1;
