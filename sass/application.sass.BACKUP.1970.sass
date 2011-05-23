@@ -8,6 +8,13 @@ $grid-gutter-width: 10px
 
 @import grid-coordinates
 +grid-coordinates
+<<<<<<< HEAD
+  
+body
+  background: #000
+  font-size: 12px
+  overflow: hidden
+=======
 
 body
   background: #fff
@@ -55,6 +62,7 @@ p.link
 
 
   
+>>>>>>> 11322152d4b834f49b4f061a124e11b0fcca54d7
   
 // Here down is project level
 #mast-header
@@ -196,7 +204,74 @@ body.page
           line-height: 16px
           color: $accent-color
 
+<<<<<<< HEAD
+      .right-container
+        +float-right
+        padding-left: 0
+        width: 435px
+      h1
+        font-size: 18px
+        line-height: 1.2
+        margin-bottom: 18px
+        @extend .font-helvetica
+      p
+        line-height: 1.5
+        margin-bottom: 18px
+        padding-right: 15px
+      ul
+        list-style: disc
+        margin-bottom: 15px
+        padding-left: 15px
+        li
+          line-height: 1.5
+          
+// Wide Page Formatting
+body.wideServices
+  // Content area
+  #content
+    .container
+      @extend .grid-container
+      width: 960px
+      @extend .font-helvetica
+      +box-sizing(border-box)
+      position: relative
+      margin-top: 100%
+      margin-bottom: 150px
+      background: #000
+      color: #fff
+      z-index: 1
+      border-bottom: solid #fff 2px
+      .wide-container
+        +box-sizing(border-box)
+        font-size: 14px
+        line-height: 1.7em
+        width: 100%
+        +float-left
+        padding: 35px 0 15px 0
+        z-index: 5
+        h1
+          @extend .font-helvetica
+          font-size: 42px
+          line-height: 15px
+          margin-bottom: 20px
+          padding: 0 15px
+          :text-transform uppercase
+          color: $accent-color
+        .package
+          padding: 0px 15px
+          margin-bottom: .7em
+          &:hover
+            background: #222
+        h2
+          display: block
+          padding-top: 10px
+          line-height: 16px
+          color: $accent-color
+        p
+          padding-bottom: 10px
+=======
 
+>>>>>>> 11322152d4b834f49b4f061a124e11b0fcca54d7
 
 // Scrollbar Pane
 .scrollbar-pane

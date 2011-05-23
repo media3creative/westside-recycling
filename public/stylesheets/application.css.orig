@@ -38,7 +38,11 @@ table {
   border-spacing: 0;
 }
 
+<<<<<<< HEAD
+.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.page #content .container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
+=======
 .font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1 {
+>>>>>>> 11322152d4b834f49b4f061a124e11b0fcca54d7
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -120,7 +124,11 @@ a:focus, a:active {
   margin-left: 0px;
 }
 
+<<<<<<< HEAD
+.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.page #content .container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
+=======
 .font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1 {
+>>>>>>> 11322152d4b834f49b4f061a124e11b0fcca54d7
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -628,8 +636,13 @@ a:focus, a:active {
 }
 
 body {
+<<<<<<< HEAD
+  background: black;
+  font-size: 12px;
+=======
   background: white;
   font-size: 14px;
+>>>>>>> 11322152d4b834f49b4f061a124e11b0fcca54d7
   overflow: hidden;
 }
 
