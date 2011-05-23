@@ -39,7 +39,7 @@ table {
   border-spacing: 0;
 }
 
-.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1 {
+.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.page #content .container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -121,7 +121,7 @@ a:focus, a:active {
   margin-left: 0px;
 }
 
-.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1 {
+.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.page #content .container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -129,10 +129,10 @@ a:focus, a:active {
   font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
-.grid-pie-clearfix, .grid-container, #contact-container, body.page #content .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
+.grid-pie-clearfix, .grid-container, #contact-container, body.page #content .container, body.wideServices #content .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
   *zoom: 1;
 }
-.grid-pie-clearfix:after, .grid-container:after, #contact-container:after, body.page #content .container:after, .nested-grid-container:after, .grid-block:after, .grid-full:after, .grid-1:after, .grid-2:after, .grid-3:after, .grid-4:after, .grid-5:after, .grid-6:after, .grid-7:after, .grid-8:after, .grid-9:after, .grid-10:after, .grid-11:after, .grid-12:after, .grid-13:after, .grid-14:after, .grid-15:after, .grid-16:after, .grid-17:after, .grid-18:after, .grid-19:after, .grid-20:after, .grid-21:after, .grid-22:after, .grid-23:after, .grid-24:after {
+.grid-pie-clearfix:after, .grid-container:after, #contact-container:after, body.page #content .container:after, body.wideServices #content .container:after, .nested-grid-container:after, .grid-block:after, .grid-full:after, .grid-1:after, .grid-2:after, .grid-3:after, .grid-4:after, .grid-5:after, .grid-6:after, .grid-7:after, .grid-8:after, .grid-9:after, .grid-10:after, .grid-11:after, .grid-12:after, .grid-13:after, .grid-14:after, .grid-15:after, .grid-16:after, .grid-17:after, .grid-18:after, .grid-19:after, .grid-20:after, .grid-21:after, .grid-22:after, .grid-23:after, .grid-24:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -141,7 +141,7 @@ a:focus, a:active {
   visibility: hidden;
 }
 
-.grid-container, #contact-container, body.page #content .container {
+.grid-container, #contact-container, body.page #content .container, body.wideServices #content .container {
   margin: 0 auto;
   width: 960px;
 }
@@ -813,8 +813,8 @@ a:focus, a:active {
 }
 
 body {
-  background: white;
-  font-size: 14px;
+  background: black;
+  font-size: 12px;
   overflow: hidden;
 }
 
@@ -1000,6 +1000,7 @@ body.page #content .container .left-container {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 35px 15px 15px 15px;
+  font-size: 18px;
   line-height: 30px;
   width: 100%;
   display: inline;
@@ -1018,12 +1019,87 @@ body.page #content .container .left-container h2 {
   line-height: 16px;
   color: #cc0000;
 }
+body.page #content .container .right-container {
+  display: inline;
+  float: right;
+  padding-left: 0;
+  width: 435px;
+}
+body.page #content .container h1 {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+body.page #content .container p {
+  line-height: 1.5;
+  margin-bottom: 18px;
+  padding-right: 15px;
+}
+body.page #content .container ul {
+  list-style: disc;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+body.page #content .container ul li {
+  line-height: 1.5;
+}
+
+body.wideServices #content .container {
+  width: 960px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 100%;
+  margin-bottom: 150px;
+  background: black;
+  color: white;
+  z-index: 1;
+  border-bottom: solid white 2px;
+}
+body.wideServices #content .container .wide-container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.7em;
+  width: 100%;
+  display: inline;
+  float: left;
+  padding: 35px 0 15px 0;
+  z-index: 5;
+}
+body.wideServices #content .container .wide-container h1 {
+  font-size: 42px;
+  line-height: 15px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  color: #cc0000;
+}
+body.wideServices #content .container .wide-container .package {
+  padding: 0px 15px;
+  margin-bottom: 0.7em;
+}
+body.wideServices #content .container .wide-container .package:hover {
+  background: #222222;
+}
+body.wideServices #content .container .wide-container h2 {
+  display: block;
+  padding-top: 10px;
+  line-height: 16px;
+  color: #cc0000;
+}
+body.wideServices #content .container .wide-container p {
+  padding-bottom: 10px;
+}
 
 .scrollbar-pane {
   height: 100%;
   overflow: display;
   position: relative;
-  padding-right: 20px;
 }
 
 .scrollbar-handle-container {
