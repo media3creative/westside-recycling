@@ -1,0 +1,58 @@
+- @title = "Personal Training Package Solutions"
+- @body_class = "wideServices"
+
+.container
+  .wide-container
+    %h1= @title
+    
+    .package
+      <h2>90-Minute PT Sessions</h2>
+      <p>These sessions are designed for clients that want to indulge in a full body workout.</p>
+
+    .package
+      <h2>60-Minute PT Sessions</h2>
+      <p>During these 60-minute one-on-one sessions, a personal trainer will take you through workouts designed to help you reach your specific goals. You'll learn proper form and technique to maximize your results while reducing your risk of injury. PT is ideal if you're trying to lose weight, gain muscle, improve posture and flexibility, increase sports performance, or simply feel better.</p>
+
+    .package
+      <h2>30-Minute PT Sessions</h2>
+      <p>Experience the benefits of personal training during sessions that fit your crazy schedule. Whether you're looking for a great lunchtime workout or are always on-the-go, you can still find time to take care of you.</p>
+
+    .package    
+      <h2>Personal Training Ab Workout</h2>
+      <p>Indulge yourself in an intense cardio/abdominal session that will be sure to start you on your way to those stunning 6-pack abs.</p>
+
+    .package
+      <h2>90-Minute PT Sessions</h2>
+      <p>These sessions are designed for clients that want to indulge in a full body workout.</p>
+
+    .package    
+      <h2>90-Minute PT Sessions</h2>
+      <p>These sessions are designed for clients that want to indulge in a full body workout.</p>
+
+    .package
+      <h2>90-Minute PT Sessions</h2>
+      <p>These sessions are designed for clients that want to indulge in a full body workout.</p>
+
+    .package    
+      <h2>90-Minute PT Sessions</h2>
+      <p>These sessions are designed for clients that want to indulge in a full body workout.</p>
+
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+      
+      $.ezBgResize({
+        img     : "/images/backgrounds/about.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 0,
+        center  : true
+      });
+      
+    });
+    $(document).ready(function(){
+    	$(".container").ready(function(){
+    		$(".container").animate({marginTop:'-10px'}, 750);				   
+    	});			   
+    });
