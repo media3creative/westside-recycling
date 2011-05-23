@@ -9,14 +9,52 @@ $grid-gutter-width: 10px
 @import grid-coordinates
 +grid-coordinates
 
-
-
-  
-  
 body
   background: #fff
-  font-size: 12px
+  font-size: 14px
   overflow: hidden
+  
+.test
+  margin: 2px 0 2px 0
+  padding: 2px 0
+  
+p.testimony
+  font-style: italic
+  line-height: 16px
+  margin-bottom: 10px
+
+  
+p.name
+  font-size: 80%
+  color: #eee
+  margin: 0
+  line-height: 12px
+  font-weight: bold
+  
+
+p.who
+  font-size: 80%
+  color: #eee
+  margin: 0
+  line-height: 13px
+  margin-bottom: 30px
+
+#testimony-image
+  width: 100px
+  height: 100px
+  background: #fff
+  +float-left
+  margin: 0 10px 10px 0
+  clear: left
+  
+p.link
+  margin-top: -30px
+  font-size: 85%
+  text-decoration: underline
+  color: $accent-color
+
+
+  
   
 // Here down is project level
 #mast-header
@@ -141,11 +179,10 @@ body.page
       .left-container
         +box-sizing(border-box)
         padding: 35px 15px 15px 15px
-        font-size: 18px
         line-height: 30px
         width: 100%
         +float-left
-        
+
         h1
           @extend .font-helvetica
           font-size: 42px
@@ -159,31 +196,14 @@ body.page
           line-height: 16px
           color: $accent-color
 
-      .right-container
-        +float-right
-        padding-left: 0
-        width: 435px
-      h1
-        font-size: 18px
-        line-height: 1.2
-        margin-bottom: 18px
-        @extend .font-helvetica
-      p
-        line-height: 1.5
-        margin-bottom: 18px
-        padding-right: 15px
-      ul
-        list-style: disc
-        margin-bottom: 15px
-        padding-left: 15px
-        li
-          line-height: 1.5
+
 
 // Scrollbar Pane
 .scrollbar-pane
   height: 100%
   overflow: display
   position: relative
+  padding-right: 20px
 
 .scrollbar-handle-container
   width: $scrollbar-width

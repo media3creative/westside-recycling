@@ -39,7 +39,7 @@ table {
   border-spacing: 0;
 }
 
-.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.page #content .container h1 {
+.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1 {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -120,7 +120,7 @@ a:focus, a:active {
   margin-left: 0px;
 }
 
-.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.page #content .container h1 {
+.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1 {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -813,8 +813,52 @@ a:focus, a:active {
 
 body {
   background: white;
-  font-size: 12px;
+  font-size: 14px;
   overflow: hidden;
+}
+
+.test {
+  margin: 2px 0 2px 0;
+  padding: 2px 0;
+}
+
+p.testimony {
+  font-style: italic;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+p.name {
+  font-size: 80%;
+  color: #eeeeee;
+  margin: 0;
+  line-height: 12px;
+  font-weight: bold;
+}
+
+p.who {
+  font-size: 80%;
+  color: #eeeeee;
+  margin: 0;
+  line-height: 13px;
+  margin-bottom: 30px;
+}
+
+#testimony-image {
+  width: 100px;
+  height: 100px;
+  background: white;
+  display: inline;
+  float: left;
+  margin: 0 10px 10px 0;
+  clear: left;
+}
+
+p.link {
+  margin-top: -30px;
+  font-size: 85%;
+  text-decoration: underline;
+  color: #cc0000;
 }
 
 #mast-header {
@@ -955,7 +999,6 @@ body.page #content .container .left-container {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 35px 15px 15px 15px;
-  font-size: 18px;
   line-height: 30px;
   width: 100%;
   display: inline;
@@ -974,35 +1017,12 @@ body.page #content .container .left-container h2 {
   line-height: 16px;
   color: #cc0000;
 }
-body.page #content .container .right-container {
-  display: inline;
-  float: right;
-  padding-left: 0;
-  width: 435px;
-}
-body.page #content .container h1 {
-  font-size: 18px;
-  line-height: 1.2;
-  margin-bottom: 18px;
-}
-body.page #content .container p {
-  line-height: 1.5;
-  margin-bottom: 18px;
-  padding-right: 15px;
-}
-body.page #content .container ul {
-  list-style: disc;
-  margin-bottom: 15px;
-  padding-left: 15px;
-}
-body.page #content .container ul li {
-  line-height: 1.5;
-}
 
 .scrollbar-pane {
   height: 100%;
   overflow: display;
   position: relative;
+  padding-right: 20px;
 }
 
 .scrollbar-handle-container {
