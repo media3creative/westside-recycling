@@ -1,0 +1,40 @@
+- @title = "Sponsors & Partners"
+- @body_class = "page sponsorspartners"
+
+%style{ :type => "text/css" }
+  :sass
+    html
+      :overflow hidden
+
+.container
+  .left-container
+    .scrollbar-pane
+      %h1= @title
+    %ul.partners
+      %li Chris Cunningham
+      %li InZoneFoundation
+      %li Partner 3
+    %ul.sponsors
+      %li Sponsor 1
+      %li Sponsor 2
+      %li Sponsor 3
+
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+      
+      $.ezBgResize({
+        img     : "/images/backgrounds/services.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 1,
+        center  : true
+      });
+      
+    });
+    $(document).ready(function(){
+    	$(".container").ready(function(){
+    		$(".container").animate({right:'18%'}, 1000);				   
+    	});			   
+    });
