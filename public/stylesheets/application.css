@@ -815,7 +815,7 @@ a:focus, a:active {
 body {
   background: black;
   font-size: 14px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #mast-header {
@@ -930,6 +930,7 @@ body {
 }
 #contact-container h1 {
   font-size: 42px;
+  line-height: 1em;
   margin: 24px 0 -20px 16px;
   text-transform: uppercase;
   color: #cc0000;
@@ -963,7 +964,7 @@ body.page #content .container .left-container {
 }
 body.page #content .container .left-container h1 {
   font-size: 42px;
-  line-height: 15px;
+  line-height: 1em;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: #cc0000;
@@ -975,11 +976,31 @@ body.page #content .container .left-container h2 {
   color: #cc0000;
 }
 
+.test, #sponsors .partner, #sponsors .sponsor, #sponsors .sponsor-gold, #sponsors #partners .sponsor-gold, #partners #sponsors .sponsor-gold, #sponsors .sponsor-silver, #sponsors #partners .sponsor-silver, #partners #sponsors .sponsor-silver, #partners .partner, #partners .sponsor, #partners .sponsor-gold, #partners .sponsor-silver {
+  display: block;
+  display: inline;
+  float: left;
+  clear: left;
+  padding-left: 10px;
+}
+.test:hover, #sponsors .partner:hover, #sponsors .sponsor:hover, #sponsors .sponsor-gold:hover, #sponsors #partners .sponsor-gold:hover, #partners #sponsors .sponsor-gold:hover, #sponsors .sponsor-silver:hover, #sponsors #partners .sponsor-silver:hover, #partners #sponsors .sponsor-silver:hover, #partners .partner:hover, #partners .sponsor:hover, #partners .sponsor-gold:hover, #partners .sponsor-silver:hover {
+  background: #222222;
+}
+.test img, #sponsors .partner img, #sponsors .sponsor img, #sponsors .sponsor-gold img, #sponsors #partners .sponsor-gold img, #partners #sponsors .sponsor-gold img, #sponsors .sponsor-silver img, #sponsors #partners .sponsor-silver img, #partners #sponsors .sponsor-silver img, #partners .partner img, #partners .sponsor img, #partners .sponsor-gold img, #partners .sponsor-silver img {
+  width: 100px;
+  height: 100px;
+  background: white;
+  display: inline;
+  float: left;
+  margin: 5px 10px 8px 0;
+  clear: left;
+}
+
 p.testimony {
   font-style: italic;
   line-height: 16px;
   margin-bottom: 5px;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 p.name {
@@ -987,8 +1008,10 @@ p.name {
   color: #eeeeee;
   margin: 0;
   font-weight: bold;
-  margin-bottom: 2px;
   line-height: 12px;
+}
+p.name .sponsor-gold {
+  color: #d3ad15;
 }
 
 p.who {
@@ -998,21 +1021,12 @@ p.who {
   margin-bottom: 5px;
 }
 
-#testimony-image {
-  width: 100px;
-  height: 100px;
-  background: white;
-  display: inline;
-  float: left;
-  margin: 5px 10px 10px 0;
-  clear: left;
-}
-
 p.link {
   margin-top: -20px;
   font-size: 85%;
   text-decoration: underline;
   color: #cc0000;
+  clear: both;
 }
 
 .service-list {
@@ -1035,12 +1049,49 @@ p.link {
   text-align: center;
 }
 
-body.wideServices #content .container {
-  width: 960px;
+#sponsors, #partners {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 3px 0;
+}
+#sponsors:hover, #partners:hover {
+  background: none;
+}
+#sponsors:hover h2, #partners:hover h2 {
+  font-weight: bold;
+}
+#sponsors .partner, #sponsors .sponsor, #sponsors .sponsor-gold, #sponsors #partners .sponsor-gold, #partners #sponsors .sponsor-gold, #sponsors .sponsor-silver, #sponsors #partners .sponsor-silver, #partners #sponsors .sponsor-silver, #partners .partner, #partners .sponsor, #partners #sponsors .sponsor-gold, #sponsors #partners .sponsor-gold, #partners .sponsor-gold, #partners #sponsors .sponsor-silver, #sponsors #partners .sponsor-silver, #partners .sponsor-silver {
+  clear: none;
+  display: inline;
+  font-size: 13px;
+  margin: 0 3px;
+  padding: 2px;
+}
+#sponsors .partner:hover, #sponsors .sponsor:hover, #sponsors .sponsor-gold:hover, #sponsors #partners .sponsor-gold:hover, #partners #sponsors .sponsor-gold:hover, #sponsors .sponsor-silver:hover, #sponsors #partners .sponsor-silver:hover, #partners #sponsors .sponsor-silver:hover, #partners .partner:hover, #partners .sponsor:hover, #partners #sponsors .sponsor-gold:hover, #sponsors #partners .sponsor-gold:hover, #partners .sponsor-gold:hover, #partners #sponsors .sponsor-silver:hover, #sponsors #partners .sponsor-silver:hover, #partners .sponsor-silver:hover {
+  background: none;
+}
+#sponsors .partner img, #sponsors .sponsor img, #sponsors .sponsor-gold img, #sponsors #partners .sponsor-gold img, #partners #sponsors .sponsor-gold img, #sponsors .sponsor-silver img, #sponsors #partners .sponsor-silver img, #partners #sponsors .sponsor-silver img, #partners .partner img, #partners .sponsor img, #partners #sponsors .sponsor-gold img, #sponsors #partners .sponsor-gold img, #partners .sponsor-gold img, #partners #sponsors .sponsor-silver img, #sponsors #partners .sponsor-silver img, #partners .sponsor-silver img {
+  border: solid white 1px;
+}
+#sponsors .sponsor-gold img, #partners .sponsor-gold img {
+  border: solid #977c0f 1px;
+}
+#sponsors .sponsor-silver img, #partners .sponsor-silver img {
+  border: solid #999999 1px;
+}
+
+body.wideServices #content .container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 55%;
   position: relative;
   margin-top: 100%;
   margin-bottom: 150px;
@@ -1070,7 +1121,7 @@ body.wideServices #content .container .wide-container a.back {
 }
 body.wideServices #content .container .wide-container h1 {
   font-size: 42px;
-  line-height: 15px;
+  line-height: 1em;
   margin-bottom: 20px;
   padding: 0 15px;
   text-transform: uppercase;
@@ -1096,6 +1147,7 @@ body.wideServices #content .container .wide-container p {
 
 .scrollbar-pane {
   height: 100%;
+  min-height: 280px;
   overflow: display;
   position: relative;
 }

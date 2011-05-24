@@ -8,16 +8,60 @@
 
 .container
   .left-container
+    %h1= @title
     .scrollbar-pane
-      %h1= @title
-    %ul.partners
-      %li Chris Cunningham
-      %li InZoneFoundation
-      %li Partner 3
-    %ul.sponsors
-      %li Sponsor 1
-      %li Sponsor 2
-      %li Sponsor 3
+      %h2 SPONSORS
+      #sponsors
+        .sponsor-gold
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/sponsor-now.jpg", :width => "100px", :height => "100px"}
+          %p Sponsor Name
+        
+        .sponsor-gold
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/sponsor-now.jpg", :width => "100px", :height => "100px"}
+          %p Sponsor Name
+        
+        
+        .sponsor-silver
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/sponsor-now.jpg", :width => "100px", :height => "100px"}
+          %p Sponsor Name
+        
+        
+        .sponsor-silver
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/sponsor-now.jpg", :width => "100px", :height => "100px"}
+          %p Sponsor Name
+        
+        .sponsor-gold
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/sponsor-now.jpg", :width => "100px", :height => "100px"}
+          %p Sponsor Name
+        
+        .sponsor-silver
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/sponsor-now.jpg", :width => "100px", :height => "100px"}
+          %p Sponsor Name
+        
+          
+
+      %h2 PARTNERS   
+      #partners
+        .partner
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/inzonefoundation.jpg", :width => "100px", :height => "100px"}
+          %p InZONE Foundation
+
+        .partner
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/become-partner.jpg", :width => "100px", :height => "100px"}
+          %p Partner Name
+
+        .partner
+          %a{:href => "http://www.inzonefoundation.org"}
+            %img{:src => "/images/partners/become-partner.jpg", :width => "100px", :height => "100px"}
+          %p Partner Name
 
 
 - content_for :page_javascript do
@@ -25,7 +69,7 @@
     $(document).ready(function() {
       
       $.ezBgResize({
-        img     : "/images/backgrounds/services.jpg",
+        img     : "/images/backgrounds/sponsors-partners.jpg",
         width   : 1600,
         height  : 1050,
         opacity : 1,

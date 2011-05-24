@@ -12,11 +12,8 @@ $grid-gutter-width: 10px
 body
   background: #000
   font-size: 14px
-  overflow: hidden
-
-
-
-      
+  overflow-x: hidden
+  
 // Here down is project level
 #mast-header
   position: relative
@@ -31,7 +28,6 @@ body
   background: transparent image-url("swift-sessions-home.png") no-repeat
   margin: 0 auto
   top: 18px
-  
    
 // Site logo
 #logo
@@ -93,7 +89,6 @@ body
 body.home a.home, body.about a.about, body.testimonials a.testimonials, body.sponsorspartners a.sponsorspartners, body.contact a.contact, body.services li.services > a
   @extend .navigation-hover
   
-
 #contact-container
   @extend .grid-container
   @extend .font-helvetica
@@ -116,6 +111,7 @@ body.home a.home, body.about a.about, body.testimonials a.testimonials, body.spo
   h1
     @extend .font-helvetica
     font-size: 42px
+    line-height: 1em
     margin: 24px 0 -20px 16px
 
     :text-transform uppercase
@@ -138,7 +134,6 @@ body.page
       z-index: 1
       border-bottom: solid #fff 2px
 
-      
       .left-container
         +box-sizing(border-box)
         padding: 35px 15px 15px 15px
@@ -149,7 +144,7 @@ body.page
         h1
           @extend .font-helvetica
           font-size: 42px
-          line-height: 15px
+          line-height: 1em
           margin-bottom: 20px
           :text-transform uppercase
           color: $accent-color
@@ -160,20 +155,35 @@ body.page
           color: $accent-color
           
 //Testimony page
+.test
+  display: block
+  +float-left
+  clear: left
+  padding-left: 10px
+  &:hover
+    background: #222
+  img
+    width: 100px
+    height: 100px
+    background: #fff
+    +float-left
+    margin: 5px 10px 8px 0
+    clear: left
 
 p.testimony
   font-style: italic
   line-height: 16px
   margin-bottom: 5px
-  padding-top: 5px
+  padding-top: 7px
 
 p.name
   font-size: 80%
   color: #eee
   margin: 0
   font-weight: bold
-  margin-bottom: 2px
   line-height: 12px
+  .sponsor-gold
+    color: #D3AD15
 
 p.who
   font-size: 80%
@@ -181,20 +191,12 @@ p.who
   margin: 0
   margin-bottom: 5px
 
-#testimony-image
-  width: 100px
-  height: 100px
-  background: #fff
-  +float-left
-  margin: 5px 10px 10px 0
-  clear: left
-  
-
 p.link
   margin-top: -20px
   font-size: 85%
   text-decoration: underline
   color: $accent-color
+  clear: both
 
 //Services List Page
 .service-list
@@ -211,16 +213,50 @@ p.link
       width: 115px
       line-height: 16px
       text-align: center
-          
+      
+//Sponsors and Partners page
+#sponsors, #partners
+  +box-sizing(border-box)
+  position: relative
+  +float-left
+  width: 100%
+  margin: 3px 0
+  &:hover
+    background: none
+    h2
+      font-weight: bold
+  .partner, .sponsor
+    @extend .test
+    clear: none
+    display: inline
+    font-size: 13px
+    margin: 0 3px
+    padding: 2px
+    &:hover
+      background: none
+    img
+      border: solid #FFF 1px
+
+  .sponsor-gold
+    @extend .sponsor
+    img
+      border: solid #977c0f 1px
+  
+  .sponsor-silver
+    @extend .sponsor
+    img
+      border: solid #999 1px
+
+
 // Wide Page Formatting
 body.wideServices
   // Content area
   #content
     .container
-      @extend .grid-container
-      width: 960px
-      @extend .font-helvetica
       +box-sizing(border-box)
+      @extend .grid-container
+      @extend .font-helvetica
+      width: 55%
       position: relative
       margin-top: 100%
       margin-bottom: 150px
@@ -244,7 +280,7 @@ body.wideServices
         h1
           @extend .font-helvetica
           font-size: 42px
-          line-height: 15px
+          line-height: 1em
           margin-bottom: 20px
           padding: 0 15px
           :text-transform uppercase
@@ -268,6 +304,7 @@ body.wideServices
 // Scrollbar Pane
 .scrollbar-pane
   height: 100%
+  min-height: 280px
   overflow: display
   position: relative
 
