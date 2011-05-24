@@ -14,46 +14,9 @@ body
   font-size: 14px
   overflow: hidden
 
-.test
-  margin: 2px 0 2px 0
-  padding: 2px 0
-
-p.testimony
-  font-style: italic
-  line-height: 16px
-  margin-bottom: 10px
 
 
-p.name
-  font-size: 80%
-  color: #eee
-  margin: 0
-  font-weight: bold
-  margin-bottom: 13px
-  line-height: 12px
-
-
-p.who
-  font-size: 80%
-  color: #eee
-  margin: 0
-  margin-bottom: 10px
-
-#testimony-image
-  width: 100px
-  height: 100px
-  background: #fff
-  +float-left
-  margin: 0 10px 10px 0
-  clear: left
-
-p.link
-  margin-top: -20px
-  font-size: 85%
-  text-decoration: underline
-  color: $accent-color
-  
-  
+      
 // Here down is project level
 #mast-header
   position: relative
@@ -87,7 +50,7 @@ p.link
     text-indent: -99999px
     width: 100%
 #logo2
-  position: absolute
+  position: fixed
   background: image-url("logo2.png") no-repeat
   height: 96px
   width:  81px
@@ -96,6 +59,7 @@ p.link
   right: 30px
   margin-right: 40px
   z-index: 1
+  
   // Main navigation
 .navigation
   @extend .font-helvetica
@@ -104,7 +68,7 @@ p.link
   margin: 0 auto
   font-size: 14px
   top: 68px
-  right: 40px
+  right: 30px
   ul
     position: relative
     +pie-clearfix
@@ -117,7 +81,7 @@ p.link
       a
         color: $accent-color
         display: block
-        padding: 6px 20px
+        padding: 6px 10px
         text-decoration: none
         &:hover
           @extend .navigation-hover
@@ -173,6 +137,7 @@ body.page
       color: #fff
       z-index: 1
       border-bottom: solid #fff 2px
+
       
       .left-container
         +box-sizing(border-box)
@@ -193,7 +158,59 @@ body.page
           padding-top: 10px
           line-height: 16px
           color: $accent-color
+          
+//Testimony page
 
+p.testimony
+  font-style: italic
+  line-height: 16px
+  margin-bottom: 5px
+  padding-top: 5px
+
+p.name
+  font-size: 80%
+  color: #eee
+  margin: 0
+  font-weight: bold
+  margin-bottom: 2px
+  line-height: 12px
+
+p.who
+  font-size: 80%
+  color: #eee
+  margin: 0
+  margin-bottom: 5px
+
+#testimony-image
+  width: 100px
+  height: 100px
+  background: #fff
+  +float-left
+  margin: 5px 10px 10px 0
+  clear: left
+  
+
+p.link
+  margin-top: -20px
+  font-size: 85%
+  text-decoration: underline
+  color: $accent-color
+
+//Services List Page
+.service-list
+  margin: 0 auto
+  .service
+    display: inline
+    +float-left
+    padding-right: 3%
+    #service-image
+      height: 115px
+      width: 115px
+      padding-bottom: 5px
+    p.service-text
+      width: 115px
+      line-height: 16px
+      text-align: center
           
 // Wide Page Formatting
 body.wideServices
@@ -211,6 +228,7 @@ body.wideServices
       color: #fff
       z-index: 1
       border-bottom: solid #fff 2px
+
       .wide-container
         +box-sizing(border-box)
         font-size: 14px
@@ -219,6 +237,10 @@ body.wideServices
         +float-left
         padding: 35px 0 15px 0
         z-index: 5
+        a.back
+          color: #444
+          text-decoration: underline
+          +float-right
         h1
           @extend .font-helvetica
           font-size: 42px
@@ -232,11 +254,14 @@ body.wideServices
           margin-bottom: .7em
           &:hover
             background: #222
+
         h2
           display: block
           padding-top: 10px
           line-height: 16px
+          margin-bottom: 5px
           color: $accent-color
+
         p
           padding-bottom: 10px
 

@@ -1,0 +1,50 @@
+- @title = "SAQ Training Package Solutions"
+- @body_class = "wideServices"
+
+.container
+  .wide-container
+    %h1= @title
+    
+    .package
+      %h2 1-on1 SAQ Sessions
+      %p 30 min session: $29.99
+      %p 60 min session: $69.99
+      
+      
+    .package
+      %h2 Varsity Level
+      %p The VARSITY Level Package is offered to those in junior high and high school (ages 12 and up). This program was designed to build on your running technique, speed, quickness, agility, reaction, as well as develop explosiveness and strength. During the training program, the athletes will have plenty of time to work on any changes recommended.  
+
+      %p 1 WEEK: $150
+      %p 3 WEEKS: $300
+      %p 6 WEEKS: $500
+
+    .package
+      %h2 Advanced Level
+      %p The ADVANCED Level Package is offered to those attending college, enrolling into college, or feel that they are more athletically advanced. This program was designed so each athlete will build on their running technique, speed, quickness, agility, reaction, as well as develop explosiveness and strength performance and training techniques. During the training program, the athletes will have plenty of time to work on any changes recommended. This program also includes nutrition consulting and an individually designed weight training program (unlike the high school level).
+
+      %p 1 WEEK: $200
+      %p 3 WEEKS: $500
+      %p 6 WEEKS: $900
+      
+    %a.back{:href => "/services"}
+      Back To Services
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+      
+      $.ezBgResize({
+        img     : "/images/backgrounds/about.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 0,
+        center  : true
+      });
+      
+    });
+    $(document).ready(function(){
+    	$(".container").ready(function(){
+    		$(".container").animate({marginTop:'-10px'}, 750);				   
+    	});			   
+    });

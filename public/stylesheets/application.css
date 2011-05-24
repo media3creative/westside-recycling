@@ -818,50 +818,6 @@ body {
   overflow: hidden;
 }
 
-.test {
-  margin: 2px 0 2px 0;
-  padding: 2px 0;
-}
-
-p.testimony {
-  font-style: italic;
-  line-height: 16px;
-  margin-bottom: 10px;
-}
-
-p.name {
-  font-size: 80%;
-  color: #eeeeee;
-  margin: 0;
-  font-weight: bold;
-  margin-bottom: 13px;
-  line-height: 12px;
-}
-
-p.who {
-  font-size: 80%;
-  color: #eeeeee;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-#testimony-image {
-  width: 100px;
-  height: 100px;
-  background: white;
-  display: inline;
-  float: left;
-  margin: 0 10px 10px 0;
-  clear: left;
-}
-
-p.link {
-  margin-top: -20px;
-  font-size: 85%;
-  text-decoration: underline;
-  color: #cc0000;
-}
-
 #mast-header {
   position: relative;
   width: 100%;
@@ -899,7 +855,7 @@ p.link {
 }
 
 #logo2 {
-  position: absolute;
+  position: fixed;
   background: url('../images/logo2.png?1305838887') no-repeat;
   height: 96px;
   width: 81px;
@@ -918,7 +874,7 @@ p.link {
   margin: 0 auto;
   font-size: 14px;
   top: 68px;
-  right: 40px;
+  right: 30px;
 }
 .navigation ul {
   position: relative;
@@ -942,7 +898,7 @@ p.link {
 .navigation ul li a {
   color: #cc0000;
   display: block;
-  padding: 6px 20px;
+  padding: 6px 10px;
   text-decoration: none;
 }
 
@@ -1019,6 +975,66 @@ body.page #content .container .left-container h2 {
   color: #cc0000;
 }
 
+p.testimony {
+  font-style: italic;
+  line-height: 16px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+
+p.name {
+  font-size: 80%;
+  color: #eeeeee;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 2px;
+  line-height: 12px;
+}
+
+p.who {
+  font-size: 80%;
+  color: #eeeeee;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+#testimony-image {
+  width: 100px;
+  height: 100px;
+  background: white;
+  display: inline;
+  float: left;
+  margin: 5px 10px 10px 0;
+  clear: left;
+}
+
+p.link {
+  margin-top: -20px;
+  font-size: 85%;
+  text-decoration: underline;
+  color: #cc0000;
+}
+
+.service-list {
+  margin: 0 auto;
+}
+.service-list .service {
+  display: inline;
+  display: inline;
+  float: left;
+  padding-right: 3%;
+}
+.service-list .service #service-image {
+  height: 115px;
+  width: 115px;
+  padding-bottom: 5px;
+}
+.service-list .service p.service-text {
+  width: 115px;
+  line-height: 16px;
+  text-align: center;
+}
+
 body.wideServices #content .container {
   width: 960px;
   -moz-box-sizing: border-box;
@@ -1046,6 +1062,12 @@ body.wideServices #content .container .wide-container {
   padding: 35px 0 15px 0;
   z-index: 5;
 }
+body.wideServices #content .container .wide-container a.back {
+  color: #444444;
+  text-decoration: underline;
+  display: inline;
+  float: right;
+}
 body.wideServices #content .container .wide-container h1 {
   font-size: 42px;
   line-height: 15px;
@@ -1065,6 +1087,7 @@ body.wideServices #content .container .wide-container h2 {
   display: block;
   padding-top: 10px;
   line-height: 16px;
+  margin-bottom: 5px;
   color: #cc0000;
 }
 body.wideServices #content .container .wide-container p {

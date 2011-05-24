@@ -1,0 +1,34 @@
+- @title = "Other Services"
+- @body_class = "wideServices"
+
+.container
+  .wide-container
+    %h1= @title
+    .package
+      %h2 Nutritional Consulting (Meal Plans)
+      %p We can provide meal plan solutions for the individual that wants an idea of what they should be eating in order to maximize their training results.
+      %p 1 week of meals: $25
+
+      %p 1 month (4 weeks) of meals: $50
+
+    %a.back{:href => "/services"}
+      Back To Services
+
+- content_for :page_javascript do
+  :javascript
+    $(document).ready(function() {
+      
+      $.ezBgResize({
+        img     : "/images/backgrounds/about.jpg",
+        width   : 1600,
+        height  : 1050,
+        opacity : 0,
+        center  : true
+      });
+      
+    });
+    $(document).ready(function(){
+    	$(".container").ready(function(){
+    		$(".container").animate({marginTop:'-10px'}, 750);				   
+    	});			   
+    });
