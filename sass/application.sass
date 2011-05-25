@@ -28,6 +28,8 @@ body
   background: transparent image-url("swift-sessions-home.png") no-repeat
   margin: 0 auto
   top: 18px
+  
+
 #mc_embed_signup
   position: fixed
   bottom: 40px
@@ -50,16 +52,34 @@ body
     height: 100%
     text-indent: -99999px
     width: 100%
-#logo2
-  position: fixed
-  background: image-url("logo2.png") no-repeat
-  height: 96px
-  width:  81px
-  +float-right
-  bottom: 40px
-  right: 30px
-  margin-right: 40px
-  z-index: 1
+
+#login
+  #logo2
+    position: fixed
+    background: image-url("logo2.png") no-repeat
+    height: 96px
+    width:  81px
+    +float-right
+    bottom: 40px
+    right: 0
+    padding-right: 70px
+    z-index: 1
+  a.login
+    @extend .font-helvetica
+    color: #fff
+    background: $accent-color
+    padding: 4px 35px 4px 7px
+    display: block
+    position: fixed
+    list-style: none
+    right: 0px
+    bottom: 40px
+    font-size: 10px
+    z-index: 2
+  &:hover
+    a.login
+      text-decoration: underline
+    
   
   // Main navigation
 .navigation
@@ -67,13 +87,12 @@ body
   position: relative
   +float-right
   margin: 0 auto
-  font-size: 14px
+  font-size: 13px
   top: 68px
   right: 30px
   ul
     position: relative
     +pie-clearfix
-
     li
       +float-left
       position: relative

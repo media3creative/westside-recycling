@@ -39,7 +39,7 @@ table {
   border-spacing: 0;
 }
 
-.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
+.font-helvetica, #login a.login, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -121,7 +121,7 @@ a:focus, a:active {
   margin-left: 0px;
 }
 
-.font-helvetica, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
+.font-helvetica, #login a.login, .navigation, #contact-container, #contact-container h1, body.page #content .container, body.page #content .container .left-container h1, body.wideServices #content .container, body.wideServices #content .container .wide-container h1 {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -860,7 +860,7 @@ body {
   width: 100%;
 }
 
-#logo2 {
+#login #logo2 {
   position: fixed;
   background: url('../images/logo2.png?1305838887') no-repeat;
   height: 96px;
@@ -868,9 +868,24 @@ body {
   display: inline;
   float: right;
   bottom: 40px;
-  right: 30px;
-  margin-right: 40px;
+  right: 0;
+  padding-right: 70px;
   z-index: 1;
+}
+#login a.login {
+  color: white;
+  background: #cc0000;
+  padding: 4px 35px 4px 7px;
+  display: block;
+  position: fixed;
+  list-style: none;
+  right: 0px;
+  bottom: 40px;
+  font-size: 10px;
+  z-index: 2;
+}
+#login:hover a.login {
+  text-decoration: underline;
 }
 
 .navigation {
@@ -878,7 +893,7 @@ body {
   display: inline;
   float: right;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 13px;
   top: 68px;
   right: 30px;
 }

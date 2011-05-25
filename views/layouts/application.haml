@@ -35,13 +35,17 @@
             = link_to "SPONSORS &amp; PARTNERS", "/sponsorspartners", :class => "sponsorspartners"
           %li.contact
             = link_to "CONTACT", "/contact", :class => "contact"
-
     #logo
       %a{:href => "/home"}
         = @sitename
     #content
       = yield
-    #logo2
+
+    #login
+      %a{:href => "http://www.complete-training-system.com/App/Login.aspx?MasterID=366"}
+        #logo2
+      = link_to "LOGIN", "http://www.complete-training-system.com/App/Login.aspx?MasterID=366 ", :class => "login"
+    
     .m3c-bar
       .copyright
         :markdown
