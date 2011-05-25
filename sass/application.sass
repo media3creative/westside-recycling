@@ -28,7 +28,12 @@ body
   background: transparent image-url("swift-sessions-home.png") no-repeat
   margin: 0 auto
   top: 18px
-   
+#mc_embed_signup
+  position: fixed
+  bottom: 40px
+  left: 20px
+  
+  
 // Site logo
 #logo
   position: absolute
@@ -175,6 +180,7 @@ p.testimony
   line-height: 16px
   margin-bottom: 5px
   padding-top: 7px
+  margin-right: 20px
 
 p.name
   font-size: 80%
@@ -192,8 +198,11 @@ p.who
   margin-bottom: 5px
 
 p.link
-  margin-top: -20px
+  position: relative
+  margin-top: 10px
   font-size: 85%
+  +float-right
+  padding-right: 20px
   text-decoration: underline
   color: $accent-color
   clear: both

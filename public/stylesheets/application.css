@@ -835,6 +835,12 @@ body {
   top: 18px;
 }
 
+#mc_embed_signup {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+}
+
 #logo {
   position: absolute;
   background: url('../images/logo.png?1305831706') no-repeat;
@@ -1001,6 +1007,7 @@ p.testimony {
   line-height: 16px;
   margin-bottom: 5px;
   padding-top: 7px;
+  margin-right: 20px;
 }
 
 p.name {
@@ -1022,8 +1029,12 @@ p.who {
 }
 
 p.link {
-  margin-top: -20px;
+  position: relative;
+  margin-top: 10px;
   font-size: 85%;
+  display: inline;
+  float: right;
+  padding-right: 20px;
   text-decoration: underline;
   color: #cc0000;
   clear: both;
