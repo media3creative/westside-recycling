@@ -137,7 +137,6 @@ body.home a.home, body.about a.about, body.testimonials a.testimonials, body.spo
     font-size: 42px
     line-height: 1em
     margin: 24px 0 -20px 16px
-
     :text-transform uppercase
     color: $accent-color
     
@@ -157,7 +156,6 @@ body.page
       color: #fff
       z-index: 1
       border-bottom: solid #fff 2px
-
       .left-container
         +box-sizing(border-box)
         padding: 35px 15px 15px 15px
@@ -228,20 +226,42 @@ p.link
 
 //Services List Page
 .service-list
-  margin: 0 auto
   .service
+    +box-sizing(border-box)
     display: inline
     +float-left
     padding-right: 3%
+    opacity: 0.7
+    filter: alpha(opacity=70)
+    &:hover
+      opacity: 1
+      filter: alpha(opacity=100)
     #service-image
       height: 115px
       width: 115px
-      padding-bottom: 5px
+      padding-bottom: 15px
     p.service-text
       width: 115px
-      line-height: 16px
+      font-size: 12
+      line-height: 12px
       text-align: center
-      
+
+p.verse
+  +box-sizing(border-box)
+  width: 100%
+  font-size: 12px
+  line-height: 11px
+  text-align: left
+  color: #eee
+  :font-style italic
+  padding-left: 5px
+
+.head
+  background: #222
+  padding: 10px
+  margin-bottom: 20px
+  border-bottom: solid #444 2px
+       
 //Sponsors and Partners page
 #sponsors, #partners
   +box-sizing(border-box)
@@ -310,7 +330,7 @@ body.wideServices
           font-size: 42px
           line-height: 1em
           margin-bottom: 20px
-          padding: 0 15px
+          padding: 0 5px
           :text-transform uppercase
           color: $accent-color
         .package
