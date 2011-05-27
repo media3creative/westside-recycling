@@ -1,5 +1,5 @@
 3.0.25 (Classy Cassidy)
-4b739940037e2f70a473c2e285a65e0e1e16b899
+323dc6ff30ebe63b19b69921b92c9fc9c53b7132
 o:Sass::Tree::RootNode	:@has_childrenT:@options{:property_syntax0:cache_location"./.sass-cache:css_location"./public/stylesheets:load_paths["./public/stylesheets/sass"./sass"f/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/compass-0.10.6/frameworks/blueprint/stylesheets"z/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/compass-0.10.6/frameworks/_blueprint_deprecated_imports/stylesheets"d/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/compass-0.10.6/frameworks/compass/stylesheets"x/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/compass-0.10.6/frameworks/_compass_deprecated_imports/stylesheets"`/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/grid-coordinates-1.1.4/lib/../stylesheets"[/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/meyer-reset-2.0.0/lib/../stylesheets:full_exceptionT:always_updateF:css_filename")./public/stylesheets/application.css:syntax:	sass:line_comments0:always_checkT:
 cacheT:template_location[[@
 @[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets:filename"./sass/application.sass:
@@ -357,7 +357,7 @@ body.wideServices
 // Scrollbar Pane
 .scrollbar-pane
   height: 100%
-  min-height: 280px
+  min-height: 200px
   overflow: display
   position: relative
 
@@ -607,7 +607,7 @@ o;1;iW; o;:
 block;@;);*;@;+["display;@#;0i ;[ ;8;9o;1;iX; o;%;&"	10px;'[ ;iX; i;(["px;@;);*;@;+["padding-top;@#;0i ;[ ;8;9o;1;iY; o;%;&"	16px;'[ ;iY; i;(["px;@;);*;@;+["line-height;@#;0i ;[ ;8;9o;1;iZ; o;%;&"5px;'[ ;iZ; i
 ;(["px;@;);*;@;+["margin-bottom;@#;0i ;[ ;8;9o;1;i[; o;F	;i[;@;+"accent-color;);*;@;+["
 color;@#;0i ;[ ;8;9o;.;T;/["p;i];@;@#;0i ;[o;1;i^; o;%;&"	10px;'[ ;i^; i;(["px;@;);*;@;+["padding-bottom;@#;0i ;[ ;8;9o;;[ ;i`; "// Scrollbar Pane;!T;@;@#;[ o;.;T;/[".scrollbar-pane;ia;@;@#;0i ;[	o;1;ib; o;%;&"	100%;'[ ;ib; ii;(["%;@;);*;@;+["height;@#;0i ;[ ;8;9o;1;ic; o;%;&"
-280px;'[ ;ic; i;(["px;@;);*;@;+["min-height;@#;0i ;[ ;8;9o;1;id; o;:
+200px;'[ ;ic; iÈ;(["px;@;);*;@;+["min-height;@#;0i ;[ ;8;9o;1;id; o;:
 ;id;;;<; "display;@;);*;@;+["overflow;@#;0i ;[ ;8;9o;1;ie; o;:
 ;ie;;;<; "relative;@;);*;@;+["position;@#;0i ;[ ;8;9o;.;T;/[" .scrollbar-handle-container;ig;@;@#;0i ;[o;1;ih; o;F	;ih;@;+"scrollbar-width;);*;@;+["
 width;@#;0i ;[ ;8;9o;.;T;/[".scrollbar-handle;ij;@;@#;0i ;[
