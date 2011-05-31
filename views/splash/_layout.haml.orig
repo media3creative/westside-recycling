@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+= render :template => "/splash/index.haml"
+=======
+%html
+  %head
+    %title Swift Sessions
+    %meta{:content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type"}/
+    %script{:src => "js/swfobject.js", :type => "text/javascript"}
+    %style{:media => "screen", :type => "text/css"}
+      body {
+      margin:0;
+      text-align:center;
+      background-color:#fff;
+      color:#999;
+      }
+      \#container{
+      width: 800px;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+      }
+      img{
+      border-style: none;
+      border:none;
+      border-color: none;
+      border-width: 0px;
+      margin-top: 200px
+      }
+      img{
+      border-style: none;
+      border:none;
+      border-color: none;
+      border-width: 0px;
+      }
+  %body
+    #container
+      %img{:src => "images/swift_underconstruction.jpg"}/
+>>>>>>> 8f6df481b77cadb45d1a2bc5565f951bf44c423b
