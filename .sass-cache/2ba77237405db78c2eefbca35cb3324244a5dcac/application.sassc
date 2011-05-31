@@ -1,5 +1,5 @@
 3.0.25 (Classy Cassidy)
-c24e978bad384973b41ac9b26828f4659c4ce576
+80b4c223dd3b0d82571e62d4b62e4cc930ef6ebe
 o:Sass::Tree::RootNode	:@has_childrenT:@options{:property_syntax0:cache_location"./.sass-cache:css_location"./public/stylesheets:load_paths["./public/stylesheets/sass"./sass"f/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/compass-0.10.6/frameworks/blueprint/stylesheets"z/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/compass-0.10.6/frameworks/_blueprint_deprecated_imports/stylesheets"d/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/compass-0.10.6/frameworks/compass/stylesheets"x/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/compass-0.10.6/frameworks/_compass_deprecated_imports/stylesheets"`/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/grid-coordinates-1.1.4/lib/../stylesheets"[/Users/joshaguilar/.rvm/gems/ruby-1.8.7-p334/gems/meyer-reset-2.0.0/lib/../stylesheets:full_exceptionT:always_updateF:css_filename")./public/stylesheets/application.css:syntax:	sass:line_comments0:always_checkT:
 cacheT:template_location[[@
 @[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets[@"./public/stylesheets:filename"./sass/application.sass:
@@ -206,13 +206,13 @@ p.about
     clear: left
 
 p.testimony
-  font-style: italic
   line-height: 16px
   margin-bottom: 5px
   padding-top: 7px
   margin-right: 20px
 
 p.name
+  font-style: italic
   font-size: 80%
   color: #eee
   margin: 0
@@ -518,10 +518,9 @@ width;@#;0i ;[ ;8;9o;1;iÅ; o;%;&"
 ;iÆ; 0;@;);*;3{	;4iÿ;5i;6iÿ;7iÿ;@;+["background;@#;0i ;[ ;8;9o;,;iÇ;-[ ;@;+"float-left;@#;[ o;1;iÈ; o;=;>o;=;>o;=;>o;%;&"5px;'[ ;iÈ; i
 ;(["px;@;);*;iÈ;?;@;@;);*;Ao;%;&"	10px;'[ ;iÈ; i;(["px;@;);*;iÈ;?;@;@;);*;Ao;%;&"8px;'[ ;iÈ; i;(["px;@;);*;iÈ;?;@;@;);*;Ao;%;&"0;'[ ;iÈ; i ;([ ;@;);*;@;+["margin;@#;0i ;[ ;8;9o;1;iÉ; o;:
 ;iÉ;;;<; "	left;@;);*;@;+["
-clear;@#;0i ;[ ;8;9o;.;T;/["p.testimony;iË;@;@#;0i ;[
-o;1;iÌ; o;:
-;iÌ;;;<; "italic;@;);*;@;+["font-style;@#;0i ;[ ;8;9o;1;iÍ; o;%;&"	16px;'[ ;iÍ; i;(["px;@;);*;@;+["line-height;@#;0i ;[ ;8;9o;1;iÎ; o;%;&"5px;'[ ;iÎ; i
-;(["px;@;);*;@;+["margin-bottom;@#;0i ;[ ;8;9o;1;iÏ; o;%;&"7px;'[ ;iÏ; i;(["px;@;);*;@;+["padding-top;@#;0i ;[ ;8;9o;1;iÐ; o;%;&"	20px;'[ ;iÐ; i;(["px;@;);*;@;+["margin-right;@#;0i ;[ ;8;9o;.;T;/["p.name;iÒ;@;@#;0i ;[o;1;iÓ; o;%;&"80%;'[ ;iÓ; iU;(["%;@;);*;@;+["font-size;@#;0i ;[ ;8;9o;1;iÔ; o;2
+clear;@#;0i ;[ ;8;9o;.;T;/["p.testimony;iË;@;@#;0i ;[	o;1;iÌ; o;%;&"	16px;'[ ;iÌ; i;(["px;@;);*;@;+["line-height;@#;0i ;[ ;8;9o;1;iÍ; o;%;&"5px;'[ ;iÍ; i
+;(["px;@;);*;@;+["margin-bottom;@#;0i ;[ ;8;9o;1;iÎ; o;%;&"7px;'[ ;iÎ; i;(["px;@;);*;@;+["padding-top;@#;0i ;[ ;8;9o;1;iÏ; o;%;&"	20px;'[ ;iÏ; i;(["px;@;);*;@;+["margin-right;@#;0i ;[ ;8;9o;.;T;/["p.name;iÑ;@;@#;0i ;[o;1;iÒ; o;:
+;iÒ;;;<; "italic;@;);*;@;+["font-style;@#;0i ;[ ;8;9o;1;iÓ; o;%;&"80%;'[ ;iÓ; iU;(["%;@;);*;@;+["font-size;@#;0i ;[ ;8;9o;1;iÔ; o;2
 ;iÔ; 0;@;);*;3{	;4iî;5i;6iî;7iî;@;+["
 color;@#;0i ;[ ;8;9o;1;iÕ; o;%;&"0;'[ ;iÕ; i ;([ ;@;);*;@;+["margin;@#;0i ;[ ;8;9o;1;iÖ; o;:
 ;iÖ;;;<; "	bold;@;);*;@;+["font-weight;@#;0i ;[ ;8;9o;1;i×; o;%;&"	12px;'[ ;i×; i;(["px;@;);*;@;+["line-height;@#;0i ;[ ;8;9o;.;T;/[".sponsor-gold;iØ;@;@#;0i ;[o;1;iÙ; o;2

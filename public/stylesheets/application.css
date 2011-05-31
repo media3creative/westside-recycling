@@ -1024,7 +1024,6 @@ p.about {
 }
 
 p.testimony {
-  font-style: italic;
   line-height: 16px;
   margin-bottom: 5px;
   padding-top: 7px;
@@ -1032,6 +1031,7 @@ p.testimony {
 }
 
 p.name {
+  font-style: italic;
   font-size: 80%;
   color: #eeeeee;
   margin: 0;
