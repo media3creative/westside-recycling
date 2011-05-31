@@ -127,11 +127,13 @@ body.home a.home, body.about a.about, body.testimonials a.testimonials, body.spo
   z-index: 1
   color: #fff
   z-index: 1
+  
   iframe
     position: absolute
     overflow: hidden
     margin-left: 10px
     top: 59px
+    
   h1
     @extend .font-helvetica
     font-size: 42px
@@ -155,7 +157,7 @@ body.page
       background: #000
       color: #fff
       z-index: 1
-      border-bottom: solid #fff 2px
+      border-left: solid #fff 2px
       .left-container
         +box-sizing(border-box)
         padding: 35px 15px 15px 15px
@@ -176,6 +178,12 @@ body.page
           line-height: 16px
           color: $accent-color
           
+//About page
+p.about
+  margin-right: 20px
+  line-height: 20px
+  margin-bottom: 10px
+  
 //Testimony page
 .test
   display: block
