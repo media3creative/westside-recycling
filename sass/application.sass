@@ -97,7 +97,6 @@ body
       +float-left
       position: relative
       display: block
-      margin-left: 5px
       a
         color: $accent-color
         display: block
@@ -110,7 +109,7 @@ body
   color: #000
   
 // Navigation
-body.home a.home, body.about a.about, body.testimonials a.testimonials, body.sponsorspartners a.sponsorspartners, body.contact a.contact, body.services li.services > a
+body.home a.home, body.about a.about, body.testimonials a.testimonials, body.sponsorspartners a.sponsorspartners, body.camp a.camp, body.contact a.contact, body.services li.services > a
   @extend .navigation-hover
   
 #contact-container
@@ -183,6 +182,14 @@ p.about
   margin-right: 20px
   line-height: 20px
   margin-bottom: 10px
+  
+//Camp page
+.forms
+  color: $accent-color
+  a
+    color: $accent-color
+    &:hover
+      color: #fff
   
 //Testimony page
 .test

@@ -914,7 +914,6 @@ body {
   float: left;
   position: relative;
   display: block;
-  margin-left: 5px;
 }
 .navigation ul li a {
   color: #cc0000;
@@ -923,7 +922,7 @@ body {
   text-decoration: none;
 }
 
-.navigation-hover, .navigation ul li a:hover, body.home a.home, body.about a.about, body.testimonials a.testimonials, body.sponsorspartners a.sponsorspartners, body.contact a.contact, body.services li.services > a {
+.navigation-hover, .navigation ul li a:hover, body.home a.home, body.about a.about, body.testimonials a.testimonials, body.sponsorspartners a.sponsorspartners, body.camp a.camp, body.contact a.contact, body.services li.services > a {
   color: black;
 }
 
@@ -1001,6 +1000,16 @@ p.about {
   margin-right: 20px;
   line-height: 20px;
   margin-bottom: 10px;
+}
+
+.forms {
+  color: #cc0000;
+}
+.forms a {
+  color: #cc0000;
+}
+.forms a:hover {
+  color: white;
 }
 
 .test, #sponsors .partner, #sponsors .sponsor, #sponsors .sponsor-gold, #sponsors #partners .sponsor-gold, #partners #sponsors .sponsor-gold, #sponsors .sponsor-silver, #sponsors #partners .sponsor-silver, #partners #sponsors .sponsor-silver, #partners .partner, #partners .sponsor, #partners .sponsor-gold, #partners .sponsor-silver {
