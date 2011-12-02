@@ -1,5 +1,5 @@
 - @title = "Contact"
-- @body_class = "contact"
+- @body_class = "page contact"
 
 %style{ :type => "text/css" }
   :sass
@@ -8,20 +8,13 @@
 
 .container
   .left-container
-    #contact-container
-      %h1= @title
-      :plain
-      <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+    %h1= @title
+    .scrollbar-pane
+      
+      %p.about.contact-form       
+        %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "340", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/s7p1s5/", :width => "100%", :border => "none"}       
+        
 
-      <script type="text/javascript">
-      var z7p9p1 = new WufooForm();
-      z7p9p1.initialize({
-      'userName':'media3creative', 
-      'formHash':'z7p9p1', 
-      'autoResize':true,
-      'width':'100%'});
-      z7p9p1.display();
-      </script>
 
 
 
@@ -29,17 +22,19 @@
 - content_for :page_javascript do
   :javascript
     $(document).ready(function() {
-
+      
       $.ezBgResize({
-        img     : "/images/backgrounds/contact.jpg",
+        img     : "/images/backgrounds/about.jpg",
         width   : 1600,
         height  : 1050,
         opacity : 1,
         center  : true
       });
+      
     });
+
     $(document).ready(function(){
-        	$("#contact-container").ready(function(){
-        		$("#contact-container").animate({right:'18%'}, 1000);				   
-        	});			   
-        });
+    	$(".container").ready(function(){
+    		$(".container").animate({right:'18%'}, 1000);				   
+    	});			   
+    });

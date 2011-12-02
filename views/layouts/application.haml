@@ -1,25 +1,46 @@
 - @sitename = "Swift Sessions"
-- @typekit_id = "dgk5bzo"
 
 !!! 5
 %html
   %head
     %title= "#{@sitename} - #{@title}"
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+
+    %link{:href => "/images/favicon.png", :rel => "icon"}
+    %link{:href => "/images/appleIcon-1.png", :rel => "apple-touch-icon"}/
+    %link{:href => "/images/appleIcon-2.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+    %link{:href => "/images/appleIcon-3.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+
+    %link{:href => "stylesheets/font-face.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/header.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/image-slider.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/footer.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
     %link{:href => "/stylesheets/application.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/stylesheets/orbit.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
-    %script{:src => "http://use.typekit.com/dgk5bzo.js", :type => "text/javascript"}
-    :javascript
-      try{Typekit.load();}catch(e){}
-    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
-    %script{:type => "text/javascript", :src => "/javascripts/modernizr-1.6.min.js"}
-    %script{:type => "text/javascript", :src => "/javascripts/bgstretcher.js"}
-    %script{:type => "text/javascript", :src => "/javascripts/jquery.ez-bg-resize.js"}
-    %script{:type => "text/javascript", :src => "/javascripts/jquery.orbit.js"}
-    %script{:type => "text/javascript", :src => "/javascripts/jquery.scroll.js"}
-    %script{:type => "text/javascript", :src => "/javascripts/application.js"}
+
+    %script{:type => "text/javascript", :src => "javascripts/respond.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery-1.5.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/modernizr-1.6.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/application.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.hoverIntent.minified.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.nivo.slider.pack.js"}
+
+    %script{:type => "text/javascript", :src => "javascripts/bgstretcher.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.ez-bg-resize.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.orbit.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.scroll.js"}
+
+    %script{:type => "text/javascript", :src => "javascripts/jquery.color.js"}
+    %script{:type => "text/javascript", :src => "javascripts/menu-control.js"}
     = yield :page_javascript
-  %body{:class => @body_class}
+  %body{:class => @body_class, :onorientationchange =>"ipadFunc();"}
     %header
+    .bg2
+    .bg1
+    .bg3
     #mast-header
       .navigation
         %ul
@@ -31,10 +52,6 @@
             = link_to "SERVICES", "/services", :class => "services"
           %li.testimonials
             = link_to "TESTIMONIALS", "/testimonials", :class => "testimonials"
-          %li.sponsorsPartners
-            = link_to "SPONSORS &amp; PARTNERS", "/sponsorspartners", :class => "sponsorspartners"
-          %li.camp
-            = link_to "CAMP", "/camp", :class => "camp"
           %li.contact
             = link_to "CONTACT", "/contact", :class => "contact"
     #logo
@@ -42,17 +59,12 @@
         = @sitename
     #content
       = yield
-
-    #login
-      %a{:href => "http://www.complete-training-system.com/App/Login.aspx?MasterID=366"}
-        #logo2
-      = link_to "LOGIN", "http://www.complete-training-system.com/App/Login.aspx?MasterID=366 ", :class => "login"
     
-    .m3c-bar
+    .omg-bar
       .copyright
         :markdown
-          Copyright &copy; 2011-#{Time.now.year} [#{@sitename}](#), All Rights Reserved.
+          Copyright &copy; 2011-#{Time.now.year} [#{@sitename}](#). All Rights Reserved.
       .powered-by
         :markdown
-          Powered by [Media 3 Creative](http://media3creative.com/) ~ [M3C Pro](http://media3creative.com/pack_pro.html)
+          Powered by [Ovalle Media Group](http://ovallemg.com/)
 

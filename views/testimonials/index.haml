@@ -10,30 +10,26 @@
   .left-container
     %h1= @title
     .scrollbar-pane
-      .test
-        %img{:src => "/images/testimonials/mercury-hall.jpg", :width => "100px", :height => "100px"}
-        %p.testimony       
-          "Speed and quickness are two things that KG knows a lot about.  These are two necessities in division one athletics that no one can fake, and Kevin's experience in sprinting helped me and many others stand out in college.  Many of us strived to reach the next level, and it was Kevin that provided us with the training advice and technique to run and react on a professional level."
-        %p.name -Mercury Hall
-        %p.who Former SMU Linebacker/Defensive End
       
-      .test
-        %img{:src => "/images/testimonials/tim-gardner.jpg", :width => "100px", :height => "100px"}
-        %p.testimony "Kevin competed with world class speed in both track and football.  I had the privilage of competing with Kevin in both football and track at SMU.   His work ethic, attention to technique & skill, and "team play" attitude were second to none.  Having him as a teammate in track, proved very helpfull to me, as his understanding and ability to share that understanding of how to maximize one's speed potential, is quite a gift."
-        %p.name -Tim Gardner
-        %p.who President/CEO Integrity Marketing Associates
-        %a{:href => "/testimonials/testimonials-continued"}
-          %p.link Read More Testimonials...
-  
- 
+      %p.about       
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        %br
+        %br
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        %br
+        %br
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
       
-      
+
+
+
+
 - content_for :page_javascript do
   :javascript
     $(document).ready(function() {
       
       $.ezBgResize({
-        img     : "/images/backgrounds/testimonials.jpg",
+        img     : "/images/backgrounds/about.jpg",
         width   : 1600,
         height  : 1050,
         opacity : 1,
@@ -41,6 +37,7 @@
       });
       
     });
+
     $(document).ready(function(){
     	$(".container").ready(function(){
     		$(".container").animate({right:'18%'}, 1000);				   

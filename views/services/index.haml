@@ -8,43 +8,28 @@
 
 .container
   .left-container
+    %h1= @title
     .scrollbar-pane
-      %h1= @title
-      .service-list
-        .service
-          #service-image
-            %a{:href => "/personal-training"}
-              %img{:src => "/images/services/personal-training.jpg"}
-          %p.service-text Personal Training
-         
-        
-        
-        .service
-          #service-image
-            %a{:href => "/saq-training"}
-              %img{:src => "/images/services/saq-training.jpg"}
-          %p.service-text SAQ Training
+      
+      %p.about       
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        %br
+        %br
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        %br
+        %br
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      
 
-        
-        .service
-          #service-image
-            %a{:href => "/other-services"}
-              %img{:src => "/images/services/meal-plan.jpg"}
-          %p.service-text Other Services
-       
-       
-        .service
-          #service-image
-            %a{:href => "/bootcamps"}
-              %img{:src => "/images/services/bootcamp.jpg"}
-          %p.service-text Bootcamps
+
+
 
 - content_for :page_javascript do
   :javascript
     $(document).ready(function() {
       
       $.ezBgResize({
-        img     : "/images/backgrounds/services.jpg",
+        img     : "/images/backgrounds/about.jpg",
         width   : 1600,
         height  : 1050,
         opacity : 1,
@@ -52,6 +37,7 @@
       });
       
     });
+
     $(document).ready(function(){
     	$(".container").ready(function(){
     		$(".container").animate({right:'18%'}, 1000);				   

@@ -46,11 +46,11 @@ table {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.ff-dagny, .m3c-bar {
+.ff-dagny, .omg-bar {
   font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
-.m3c-bar {
+.omg-bar {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -67,21 +67,21 @@ table {
   width: 100%;
   z-index: 100;
 }
-.m3c-bar .copyright {
+.omg-bar .copyright {
   display: inline;
   float: left;
   padding-left: 50px;
 }
-.m3c-bar .powered-by {
+.omg-bar .powered-by {
   display: inline;
   float: right;
   padding-right: 50px;
 }
-.m3c-bar a {
+.omg-bar a {
   color: #cc0000;
   text-decoration: none;
 }
-.m3c-bar a:hover {
+.omg-bar a:hover {
   color: #cc0000;
   border-bottom: 1px solid #222222;
   text-decoration: none;
@@ -128,7 +128,7 @@ a:focus, a:active {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.ff-dagny, .m3c-bar {
+.ff-dagny, .omg-bar {
   font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 

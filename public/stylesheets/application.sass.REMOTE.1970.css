@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -43,11 +42,11 @@ table {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.ff-dagny, .m3c-bar {
+.ff-dagny, .omg-bar {
   font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
-.m3c-bar {
+.omg-bar {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -64,21 +63,21 @@ table {
   width: 100%;
   z-index: 100;
 }
-.m3c-bar .copyright {
+.omg-bar .copyright {
   display: inline;
   float: left;
   padding-left: 50px;
 }
-.m3c-bar .powered-by {
+.omg-bar .powered-by {
   display: inline;
   float: right;
   padding-right: 50px;
 }
-.m3c-bar a {
+.omg-bar a {
   color: #cc0000;
   text-decoration: none;
 }
-.m3c-bar a:hover {
+.omg-bar a:hover {
   color: #cc0000;
   border-bottom: 1px solid #222222;
   text-decoration: none;
@@ -97,9 +96,9 @@ a:focus, a:active {
 }
 
 .bgstretcher {
-  opacity: 0.9;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
   overflow: hidden;
   width: 100%;
   position: fixed;
@@ -125,7 +124,7 @@ a:focus, a:active {
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.ff-dagny, .m3c-bar {
+.ff-dagny, .omg-bar {
   font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
@@ -133,12 +132,9 @@ a:focus, a:active {
   *zoom: 1;
 }
 .grid-pie-clearfix:after, .grid-container:after, #contact-container:after, body.page #content .container:after, .nested-grid-container:after, .grid-block:after, .grid-full:after, .grid-1:after, .grid-2:after, .grid-3:after, .grid-4:after, .grid-5:after, .grid-6:after, .grid-7:after, .grid-8:after, .grid-9:after, .grid-10:after, .grid-11:after, .grid-12:after, .grid-13:after, .grid-14:after, .grid-15:after, .grid-16:after, .grid-17:after, .grid-18:after, .grid-19:after, .grid-20:after, .grid-21:after, .grid-22:after, .grid-23:after, .grid-24:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 
 .grid-container, #contact-container, body.page #content .container {
@@ -874,14 +870,14 @@ p.link {
   position: relative;
   width: 0px;
   height: 170px;
-  background: transparent url('../images/swift-sessions-home.png?1305839090') no-repeat;
+  background: transparent url('../images/swift-sessions-home.png?1307374269') no-repeat;
   margin: 0 auto;
   top: 18px;
 }
 
 #logo {
   position: absolute;
-  background: url('../images/logo.png?1305831706') no-repeat;
+  background: url('../images/logo.png?1307374269') no-repeat;
   height: 69px;
   display: inline;
   float: left;
@@ -900,7 +896,7 @@ p.link {
 
 #logo2 {
   position: absolute;
-  background: url('../images/logo2.png?1305838887') no-repeat;
+  background: url('../images/logo2.png?1307374269') no-repeat;
   height: 96px;
   width: 81px;
   display: inline;
@@ -925,12 +921,9 @@ p.link {
   *zoom: 1;
 }
 .navigation ul:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .navigation ul li {
   display: inline;

@@ -1,0 +1,125 @@
+@import compass/utilities
+@import compass/layout
+@import compass/css3
+
+// COLOR DEFINITIONS
+$primary: #5ea6db
+//$primary-light: lighten(adjust-hue($primary, 0%), +20)
+$primary-light: #8ccaee
+$primary-dark: darken($primary, +5)
+$secondary: #a71f63
+//$secondary-light: lighten(adjust-hue($secondary, 0%), +10)
+$secondary-light: #e02877
+$secondary-dark: darken($secondary, +5)
+$accent: #c5daf1
+$apple-highlight:	#b4d5ff
+
+$line-color: #ddd
+
+$gray-dark: #333
+$gray-med: #666
+$gray-light: #efefef
+
+
+// COLOR APPLICATION
+$html-bg:									transparent
+$body-bg:									$html-bg
+$center-container-bg:			#fff
+
+$text-dark:								$gray-med
+$text-light:							#fff
+$text-highlight:					$accent
+
+$header-title:						#fff
+$header-text:							#fff
+$header-link:							$secondary
+$header-link-hover:				#000
+$header-border:						$primary-dark
+
+$nav-text:								$primary-dark
+$nav-text-hover:					#fff
+$nav-lines:								$primary
+$nav-bg:									$primary
+$nav-dropdown-text:				#fff
+$nav-dropdown-hover:			#fff
+$nav-dropdown-bg:					$primary-dark
+$nav-dropdown-bg-hover:		$primary-light
+$nav-dropdown-border:			$gray-dark
+$nav-dropdown-accent:			$secondary
+
+$image-slider-bg:					$gray-light
+$image-slider-title:			$primary-light
+$image-slider-text: 			$gray-dark
+$image-slider-link:				#fff
+$image-slider-link-hover:	#fff
+$image-slider-border:			$line-color
+
+$section-title:						$primary-light
+$section-text:						$text-dark
+$section-lines:						$gray-light
+$section-border:					$secondary
+
+$option-title:						#fff
+$option-title-bg:					transparent
+$option-text:							$text-light
+$option-link:							$secondary
+$option-link-hover:				$secondary-light
+$option-bg:								$gray-light
+$option-border:						$primary-dark
+
+$footer-title:						$gray-med
+$footer-text:							$gray-med
+$footer-link:							$gray-med
+$footer-link-hover:				$primary
+$footer-border:						$line-color
+
+$omg-bg:									#000
+$omg-border:							#777
+$omg-text:								#999
+$omg-link:								$omg-text
+$omg-link-hover:					#fff
+$omg-link-border:					#fff
+
+$opacity:									0.92
+$opacity-pc:							($opacity*100)			// DO NOT CHANGE, IS UPDATED BY LINE ABOVE
+
+
+
+
+// GRADIENTS
+.bg-gradient-primary
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from($primary-light), to($primary))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, $primary-light, $primary)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8ccaee, endColorstr=#5ea6db)
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#8ccaee, endColorstr=#5ea6db)"
+
+.bg-gradient-reverse
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from($primary), to($primary-light))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, $primary, $primary-light)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ea6db, endColorstr=#8ccaee)
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ea6db, endColorstr=#8ccaee)"
+
+.bg-gradient-secondary
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from($secondary-light), to($secondary))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, $secondary-light, $secondary)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e02877, endColorstr=#a71f63)
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e02877, endColorstr=#a71f63)"
+
+
+// CURSOR HIGHLIGHTING
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection
+	background: $text-highlight
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection
+	background: $text-highlight
